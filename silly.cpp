@@ -30,7 +30,7 @@ int main (int argc, char* argv[]) {
     int option_index = 0;
 
     //variables for input processing
-    bool quiet = false;
+    //bool quiet = false;
 
     int c = getopt_long(argc, argv, "hq", long_options, &option_index);
     while (c != -1) {
@@ -40,7 +40,7 @@ int main (int argc, char* argv[]) {
                 return 0;
                 break;
             case 'q' :
-                quiet = true;
+                //quiet = true;
                 break;
         }
         c = getopt_long(argc, argv, "hq", long_options, &option_index);
