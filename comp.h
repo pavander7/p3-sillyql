@@ -7,9 +7,4 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "comp.h"
-#include "index.h"
-#include "row.h"
 
-class ColComp; //this has to be here for the print function
-class Index;
