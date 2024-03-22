@@ -58,7 +58,7 @@ void INSERT (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename;
     stringstream ss(command);
     int N = 0;
-    ss >> junk >> tablename >> N;
+    ss >> junk >> junk >> tablename >> N;
     Tab* target = nullptr;
     try {
         target = LOC(tables, tablename);
@@ -83,13 +83,15 @@ void PRINT (std::unordered_map<std::string, Tab*> &tables, string command) {
     char OP;
     int val;
     ss >> colname;
+    size_t M = 0;
     if (ss >> OP) {
         ss >> val;
         ColComp comp(colname, OP, val, target);
-        target->print(colnames, comp);
+        M = target->print(colnames, comp);
     } else {
-        target->print(colnames);
+        M = target->print(colnames);
     }
+    cout << "Printed " << M << " matching rows from " << tablename << endl;
 }
 void DELETE (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename, col;
@@ -137,7 +139,7 @@ Tab &Tab::operator=(const Tab& rhs) {
     return *this;
 }
 void Tab::insert(int N) {
-    size_t startN = data.size() - size_t(1);
+    size_t startN = data.size();
     for (int r = 0; r < N; r++) {
         string line;
         getline(cin, line);
@@ -146,9 +148,10 @@ void Tab::insert(int N) {
     } size_t endN = data.size() - size_t(1);
     cout << "Added " << N << " rows to " << name << " from position " << startN << " to " << endN << endl;
 }
-void Tab::print(vector<std::string> cols) {
+size_t Tab::print(vector<std::string> cols) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
+    size_t M = 0;
     for (auto mother : cols) {
         if (!iCols.empty()) cout << " ";
         cout << mother;
@@ -162,14 +165,17 @@ void Tab::print(vector<std::string> cols) {
     for (auto rupaul : data) {
         bool first = true;
         for (size_t him : iCols) {
-            if (!first) { cout << " "; first = false; }
+            if (!first) { cout << " ";}
+            else first = false;
             cout << rupaul[him];
         } cout << endl;
-    }
+        M++;
+    } return M;
 }
-void Tab::print(vector<std::string> cols, ColComp comp) {
+size_t Tab::print(vector<std::string> cols, ColComp comp) {
         //map<string,vector<TableEntry>> her(data.begin(), data.end());
         vector<size_t> iCols;
+        size_t M = 0;
         for(auto mother : cols) {
             if (!iCols.empty()) cout << " ";
             cout << mother;
@@ -188,8 +194,9 @@ void Tab::print(vector<std::string> cols, ColComp comp) {
                     if (!first) { cout << " "; first = false; }
                     cout << &rupaul[him];
                 } cout << endl;
+                M++;
             }
-        }
+        } return M;
     }
 void Tab::makeIndex(bool order, string col) {
    this->i->reindex(order, col, this->names, data); 

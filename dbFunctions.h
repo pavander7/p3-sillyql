@@ -18,8 +18,8 @@ public:
     Tab &operator= (const Tab& rhs);
 
     void insert(int N);
-    void print(std::vector<std::string> cols);
-    void print(std::vector<std::string> cols, ColComp comp);
+    std::size_t print(std::vector<std::string> cols);
+    std::size_t print(std::vector<std::string> cols, ColComp comp);
     std::size_t sift(std::string col, ColComp comp);
 
     class Row;

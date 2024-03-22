@@ -1,0 +1,12 @@
+% % New table cities with column(s) name state population area is_capital? created
+% Added 7 rows to cities from position 18446744073709551615 to 6
+% name state
+Ann_ArborMichigan
+LansingMichigan
+MiamiFlorida
+San_FranciscoCalifornia
+AlbanyNew_York
+ChicagoIllinois
+St_LouisMissouri
+% Table cities removed
+% Thanks for being silly!
