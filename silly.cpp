@@ -5,19 +5,19 @@
 
 using namespace std;
 
-void CREATE (std::vector<Tab*> &tables, std::string command);
-void REMOVE (std::vector<Tab*> &tables, std::string command);
-void QUIT ();
+void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void REMOVE (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void QUIT (std::unordered_map<std::string, Tab*> &tables);
 
-void INSERT (std::vector<Tab*> &tables, std::string tablename);
-void PRINT (std::vector<Tab*> &tables, std::string tablename);
-void DELETE (std::vector<Tab*> &tables, std::string tablename);
-//void JOIN (std::vector<Tab*> &tables, std::string tablename);
-//void GENERATE (std::vector<Tab*> &tables, std::string tablename);
+void INSERT (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+void PRINT (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+void DELETE (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+//void JOIN (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+//void GENERATE (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
 
 int main (int argc, char* argv[]) {
     // step one: setup
-    vector<Tab*> tables;
+    unordered_map<string, Tab*> tables;
     ios_base::sync_with_stdio(false);
 
     //cout << "checkpoint 1: beginning \n";
@@ -56,7 +56,7 @@ int main (int argc, char* argv[]) {
                 CREATE(tables, line);
                 break;
             case 'Q':
-                QUIT();
+                QUIT(tables);
                 return 0;
                 break;
             case '#':
@@ -84,4 +84,8 @@ int main (int argc, char* argv[]) {
                 break;
         }
     }
+
+    cerr << "exited without QUIT()\n";
+    QUIT(tables);
+    return(1);
 }

@@ -11,11 +11,11 @@
 
 using namespace std;
 
-Tab* LOC (std::vector<Tab*> &tables, std::string tablename);
-size_t LOC_i (std::vector<Tab*> &tables, std::string tablename);
+Tab* LOC (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+//size_t LOC_i (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
 
 //database functions
-void CREATE (vector<Tab*> &tables, std::string command) {
+void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command) {
     std::string junk, tablename;
     stringstream ss(command);
     int N = 0;
@@ -29,16 +29,20 @@ void CREATE (vector<Tab*> &tables, std::string command) {
         names.push_back(junk);
     }
     Tab* t = new Tab(tablename, types, names);
-    tables.push_back(t);
+    tables[tablename] = t;
 }
-void QUIT () {
+void QUIT (std::unordered_map<std::string, Tab*> &tables) {
+    for (auto & [ key, value ] : tables) {
+        delete value;
+    }
     cout << "Thanks for being silly!\n";
 }
-void REMOVE (vector<Tab*> &tables, string command) {
+void REMOVE (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename;
     stringstream ss(command);
     ss >> junk >> tablename;
-    size_t target = 0;
+    tables.erase(tablename);
+    /* size_t target = 0;
     try {
         target = LOC_i(tables, tablename);
     } catch (const exception& e) {
@@ -46,30 +50,33 @@ void REMOVE (vector<Tab*> &tables, string command) {
     }
     for (size_t n = target; n < tables.size() - size_t(1); n++) {
         tables[n] = tables[n+1];
-    } tables.pop_back();
+    } tables.pop_back();*/
     cout << "Table " << tablename << " removed" << endl;
 }
 //database functions
 
 //auxiliary functions
-Tab* LOC (vector<Tab*> &tables, string tablename) {
-    for (size_t y = 0; y < tables.size(); y++) {
+Tab* LOC (std::unordered_map<std::string, Tab*> &tables, string tablename) {
+    auto target = tables.find(tablename);
+    if (target == tables.end()) throw runtime_error(tablename + " does not name a table in the database");
+    return target->second;
+    /*for (size_t y = 0; y < tables.size(); y++) {
         Tab* her = tables[y];
         if (her->name == tablename) return her;
     } throw runtime_error(tablename + " does not name a table in the database");
-    return nullptr;
+    return nullptr;*/
 }
-size_t LOC_i (vector<Tab*> &tables, string tablename) {
+/*size_t LOC_i (std::unordered_map<std::string, Tab*> &tables, string tablename) {
     for (size_t y = 0; y < tables.size(); y++) {
         Tab* her = tables[y];
         if (her->name == tablename) return y;
     } throw runtime_error(tablename + " does not name a table in the database");
     return tables.size();
-}
+}*/
 //auxiliary functions
 
 //table interface functions
-void INSERT (vector<Tab*> &tables, string command) {
+void INSERT (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename;
     stringstream ss(command);
     int N = 0;
@@ -83,7 +90,7 @@ void INSERT (vector<Tab*> &tables, string command) {
     }
     target->insert(N);
 }
-void PRINT (vector<Tab*> &tables, string command) {
+void PRINT (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename;
     stringstream ss(command);
     int N = 0;
@@ -106,7 +113,7 @@ void PRINT (vector<Tab*> &tables, string command) {
         target->print(colnames);
     }
 }
-void DELETE (vector<Tab*> &tables, string command) {
+void DELETE (std::unordered_map<std::string, Tab*> &tables, string command) {
     string junk, tablename, col;
     char OP;
     int val;
