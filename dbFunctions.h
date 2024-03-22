@@ -39,8 +39,6 @@ private:
 class Tab::Row {
 public:
     Row(std::vector<std::string> &types, std::string line);
-    //Tab::Row::Row(const Tab::Row& other);
-    //Tab::Row &operator= (const Tab::Row& rhs);
     TableEntry &operator[] (const std::size_t y) {
         return rowData[y];
     }

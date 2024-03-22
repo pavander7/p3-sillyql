@@ -49,6 +49,7 @@ int main (int argc, char* argv[]) {
 
     // step two: loop
     string line;
+    cout << "% ";
     while (getline(cin, line)) {
         char c = line[0];
         switch (c) {
@@ -83,6 +84,7 @@ int main (int argc, char* argv[]) {
                 cout << "Error: unrecognized command\n";
                 break;
         }
+        cout << "% ";
     }
 
     cerr << "exited without QUIT()\n";

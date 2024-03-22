@@ -12,7 +12,6 @@
 using namespace std;
 
 Tab* LOC (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-//size_t LOC_i (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
 
 //database functions
 void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command) {
@@ -28,8 +27,8 @@ void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command)
         ss >> junk;
         names.push_back(junk);
     }
-    Tab* t = new Tab(tablename, types, names);
-    tables[tablename] = t;
+   Tab* t = new Tab(tablename, types, names);
+    tables.emplace(tablename,t);
 }
 void QUIT (std::unordered_map<std::string, Tab*> &tables) {
     for (auto & [ key, value ] : tables) {
@@ -42,15 +41,6 @@ void REMOVE (std::unordered_map<std::string, Tab*> &tables, string command) {
     stringstream ss(command);
     ss >> junk >> tablename;
     tables.erase(tablename);
-    /* size_t target = 0;
-    try {
-        target = LOC_i(tables, tablename);
-    } catch (const exception& e) {
-        cout << "Error during REMOVE: " << e.what() << endl;
-    }
-    for (size_t n = target; n < tables.size() - size_t(1); n++) {
-        tables[n] = tables[n+1];
-    } tables.pop_back();*/
     cout << "Table " << tablename << " removed" << endl;
 }
 //database functions
@@ -60,19 +50,7 @@ Tab* LOC (std::unordered_map<std::string, Tab*> &tables, string tablename) {
     auto target = tables.find(tablename);
     if (target == tables.end()) throw runtime_error(tablename + " does not name a table in the database");
     return target->second;
-    /*for (size_t y = 0; y < tables.size(); y++) {
-        Tab* her = tables[y];
-        if (her->name == tablename) return her;
-    } throw runtime_error(tablename + " does not name a table in the database");
-    return nullptr;*/
 }
-/*size_t LOC_i (std::unordered_map<std::string, Tab*> &tables, string tablename) {
-    for (size_t y = 0; y < tables.size(); y++) {
-        Tab* her = tables[y];
-        if (her->name == tablename) return y;
-    } throw runtime_error(tablename + " does not name a table in the database");
-    return tables.size();
-}*/
 //auxiliary functions
 
 //table interface functions
@@ -267,16 +245,6 @@ Tab::Row::Row(vector<std::string> &types, std::string line) {
         }
     }
 }
-/*Tab::Row::Row(const Tab::Row& other) {
-    for (auto her : other.rowData) {
-        rowData.emplace_back(her);
-    }
-}
-Tab::Row &Tab::Row::operator= (const Tab::Row& rhs) {
-    for (auto her : rhs.rowData) {
-        rowData.emplace_back(her);
-    } return *this;
-} */
 //ROW FUNCTIONS
 
 //COMP FUNCTIONS
