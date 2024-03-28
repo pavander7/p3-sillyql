@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/silly_valgrind",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "stdio": ["cp2-in.txt","my-cp2-out.txt"]
+            "stdio": ["short-input.txt","my-short-output.txt"]
         }
     ]
 }

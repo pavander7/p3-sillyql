@@ -1,24 +1,28 @@
 // Project Identifier: C0F4DFE8B340D81183C208F70F9D2D797908754D
 
 #include "dbFunctions.h"
+#include "TableEntry.h"
 #include <getopt.h>
 
 using namespace std;
 
-void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command, bool quiet);
 void REMOVE (std::unordered_map<std::string, Tab*> &tables, std::string command);
 void QUIT (std::unordered_map<std::string, Tab*> &tables);
 
-void INSERT (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-void PRINT (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-void DELETE (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-//void JOIN (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-//void GENERATE (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+void INSERT (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void PRINT (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void DELETE (std::unordered_map<std::string, Tab*> &tables, std::string command);
+void JOIN (std::unordered_map<std::string, Tab*> &tables, std::string command, bool quiet);
+void GENERATE (std::unordered_map<std::string, Tab*> &tables, std::unordered_map<std::string, Index*> &indices, std::string command);
 
 int main (int argc, char* argv[]) {
     // step one: setup
     unordered_map<string, Tab*> tables;
+    unordered_map<string, Index*> indices;
     ios_base::sync_with_stdio(false);
+    cin >> std::boolalpha;
+    cout << std::boolalpha;
 
     //cout << "checkpoint 1: beginning \n";
 
@@ -30,7 +34,7 @@ int main (int argc, char* argv[]) {
     int option_index = 0;
 
     //variables for input processing
-    //bool quiet = false;
+    bool quiet = false;
 
     int c = getopt_long(argc, argv, "hq", long_options, &option_index);
     while (c != -1) {
@@ -40,7 +44,7 @@ int main (int argc, char* argv[]) {
                 return 0;
                 break;
             case 'q' :
-                //quiet = true;
+                quiet = true;
                 break;
         }
         c = getopt_long(argc, argv, "hq", long_options, &option_index);
@@ -54,7 +58,7 @@ int main (int argc, char* argv[]) {
         char c = line[0];
         switch (c) {
             case 'C':
-                CREATE(tables, line);
+                CREATE(tables, line, quiet);
                 break;
             case 'Q':
                 QUIT(tables);
@@ -75,10 +79,10 @@ int main (int argc, char* argv[]) {
                 DELETE(tables, line);
                 break;
             case 'J':
-                //JOIN(tables, line);
+                JOIN(tables, line, quiet);
                 break;
             case 'G':
-                //GENERATE(tables, line);
+                GENERATE(tables, indices, line);
                 break;
             default:
                 cout << "Error: unrecognized command\n";
