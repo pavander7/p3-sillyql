@@ -165,7 +165,7 @@ int main (int argc, char* argv[]) {
                 //target->makeIndex(true, colname);
                 size_t M = 0;
                 try {
-                    M = target->sift(colname, comp);
+                    M = target->sift(/*colname, */comp);
                 } catch (const exception& e) {
                     cout << "Error during INSERT: " << e.what() << endl;
                     break;
