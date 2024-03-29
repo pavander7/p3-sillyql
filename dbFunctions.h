@@ -20,7 +20,7 @@ public:
     void insert(int N);
     std::size_t print(std::vector<std::string> cols, bool quiet);
     std::size_t print(std::vector<std::string> cols, bool quiet, ColComp comp);
-    std::size_t sift(std::string col, ColComp comp);
+    std::size_t sift(/*std::string col,*/ ColComp comp);
     void join(Tab* other, std::size_t col1, std::size_t col2, 
             std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
 

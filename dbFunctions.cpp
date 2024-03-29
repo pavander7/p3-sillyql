@@ -134,14 +134,14 @@ size_t Tab::findCol (string colname) {
     } throw runtime_error(colname + " does not name a column in " + name);
     return data.size();
 }
-size_t Tab::sift(string col, ColComp comp) {
+size_t Tab::sift(/*string col,*/ ColComp comp) {
     size_t N = 0;
-    size_t w = 0;
+    /*size_t w = 0;
     try {
         w = findCol(col);
     } catch (const exception& e) {
         throw e;
-    }
+    }*/
     vector<Tab::Row> temp;
     for (size_t a = 0; a < data.size(); a++) {
         if (!comp(a)) {
