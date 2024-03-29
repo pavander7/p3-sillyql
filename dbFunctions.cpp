@@ -45,10 +45,10 @@ TableEntry PRODUCE (string type) {
 //TAB FUNCTIONS
 Tab::Tab(std::string tablename, std::vector<std::string> types_in, std::vector<std::string> names_in, bool quiet_in) : 
         name(tablename), quiet(quiet_in), types(types_in), names(names_in) {
-    cout << "New table " << name << " with column(s) ";
+    std::cout << "New table " << name << " with column(s) ";
     for (auto t : names) {
-        cout << t << " ";
-    } cout << "created\n";
+        std::cout << t << " ";
+    } std::cout << "created\n";
 }
 Tab::Tab(const Tab& other) {
     name = other.name;
@@ -80,47 +80,62 @@ void Tab::insert(int N) {
         Row temp(types, line);
         data.push_back(temp);
     } size_t endN = data.size() - size_t(1);
-    cout << "Added " << N << " rows to " << name << " from position " << startN << " to " << endN << endl;
+    std::cout << "Added " << N << " rows to " << name << " from position " << startN << " to " << endN << endl;
 }
 size_t Tab::print(vector<std::string> cols, bool quiet) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
     size_t M = 0;
     for (auto mother : cols) {
-        cout << mother << " ";
+        std::cout << mother << " ";
         for(size_t q = 0; q < names.size(); q++) {
             if (names[q] == mother) {
                 iCols.push_back(q);
                 break;
             }
         } 
-    } cout << endl;
+    } std::cout << endl;
     for (auto rupaul : data) {
         for (size_t him : iCols) {
-            if (!quiet) cout << rupaul[him] << " ";
-        } if (!quiet) cout << endl;
+            if (!quiet) std::cout << rupaul[him] << " ";
+        } if (!quiet) std::cout << endl;
         M++;
     } return M;
 }
-size_t Tab::print(vector<std::string> cols, bool quiet, ColComp comp) {
+size_t Tab::print(vector<std::string> cols, unordered_map<string, Index*> &indices, bool quiet, ColComp comp) {
         //map<string,vector<TableEntry>> her(data.begin(), data.end());
         vector<size_t> iCols;
         size_t M = 0;
         for(auto mother : cols) {
-            cout << mother << " ";
+            std::cout << mother << " ";
             for(size_t q = 0; q < names.size(); q++) {
                 if (names[q] == mother) {
                     iCols.push_back(q);
                     break;
                 }
             } 
-        } cout << endl;
-        for(auto rupaul : data) {
-            if (comp(&rupaul)) {
-                for (size_t him : iCols) {
-                    if (!quiet) cout << rupaul[him] << " ";
-                } if (!quiet) cout << endl;
-                M++;
+        } std::cout << endl;
+        if (indices.count(name) == 1 && indices.at(name)->order) {
+            Index* currentIndex = indices[name];
+            map<TableEntry, Row*>::iterator it;
+            for(it = currentIndex->o.begin(); it != currentIndex->o.end(); it++) {
+            //for(auto & [ key, elt ] : currentIndex->o) { //copy constructing here (bad)
+                Row* elt = it->second;
+                if (comp(elt)) {
+                    for (size_t him : iCols) {
+                        if (!quiet) std::cout << &elt[him] << " ";
+                    } if (!quiet) std::cout << endl;
+                    M++;
+                }
+            }
+        } else {
+            for(auto rupaul : data) {
+                if (comp(&rupaul)) {
+                    for (size_t him : iCols) {
+                        if (!quiet) std::cout << rupaul[him] << " ";
+                    } if (!quiet) std::cout << endl;
+                    M++;
+                }
             }
         } return M;
     }
@@ -158,8 +173,8 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
             string temp;
             if (!modes[u]) temp = names[cols[u]];
             else temp = other->names[cols[u]];
-            cout << temp << ' ';
-        } cout << endl;
+            std::cout << temp << ' ';
+        } std::cout << endl;
     } for (Row* her = &(data.front()); her != &*(data.end()); her++) {
         ColComp comp(col2, '=', (*her)[col1], other);
         for (Row* him = &(other->data.front()); him != &*(other->data.end()); him++) {
@@ -167,13 +182,13 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
                 M++;
                 if (!quiet) {
                     for (size_t u = 0; u < cols.size(); u++) {
-                        if (modes[u]) cout << (*her)[cols[u]] << ' ';
-                        else cout << (*him)[cols[u]] << ' ';
-                    } cout << endl;
+                        if (!modes[u]) std::cout << her->at(cols[u]) << ' ';
+                        else std::cout << him->at(cols[u]) << ' ';
+                    } std::cout << endl;
                 }
             }
         }
-    } cout << "Printed " << M << " rows from joining " << this->name << " and " << other->name << endl;
+    } std::cout << "Printed " << M << " rows from joining " << this->name << " to " << other->name << endl;
 }
 //TAB FUNCTIONS
 

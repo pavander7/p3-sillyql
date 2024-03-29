@@ -137,7 +137,7 @@ int main (int argc, char* argv[]) {
                     }
                     string type = target->findType(col);
                     ColComp comp(col, OP, PRODUCE(type), target);
-                    M = target->print(colnames, quiet, comp);
+                    M = target->print(colnames, indices, quiet, comp);
                 } else {
                     M = target->print(colnames, quiet);
                 }

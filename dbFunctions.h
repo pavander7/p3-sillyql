@@ -19,7 +19,7 @@ public:
 
     void insert(int N);
     std::size_t print(std::vector<std::string> cols, bool quiet);
-    std::size_t print(std::vector<std::string> cols, bool quiet, ColComp comp);
+    std::size_t print(std::vector<std::string> cols, std::unordered_map<std::string, Index*> &indices, bool quiet, ColComp comp);
     std::size_t sift(/*std::string col,*/ ColComp comp);
     void join(Tab* other, std::size_t col1, std::size_t col2, 
             std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
@@ -77,8 +77,10 @@ public:
     //void reindex(bool order_in, std::string col, std::vector<std::string> names, std::vector<Tab::Row> &rawData);
     void reindex(bool order_in, std::size_t col, Tab* target);
 
+    friend class Tab;
+
 private:
+    bool order;
     std::unordered_map<TableEntry, Tab::Row*> u;
     std::map<TableEntry, Tab::Row*> o;
-    bool order;
 };
