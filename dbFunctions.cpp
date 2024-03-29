@@ -11,259 +11,40 @@
 
 using namespace std;
 
-Tab* LOC (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
-
-//database functions
-void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command, bool quiet) {
-    std::string junk, tablename;
-    stringstream ss(command);
-    int N = 0;
-    ss >> junk >> tablename >> N;
-    vector<string> types, names;
-    for (int q = 0; q < N; q++) {
-        ss >> junk;
-        types.push_back(junk);
-    } for (int q = 0; q < N; q++) {
-        ss >> junk;
-        names.push_back(junk);
-    }
-   Tab* t = new Tab(tablename, types, names, quiet);
-    tables.emplace(tablename,t);
-}
-void QUIT (std::unordered_map<std::string, Tab*> &tables) {
-    for (auto & [ key, value ] : tables) {
-        delete value;
-    }
-    cout << "Thanks for being silly!" << endl;
-}
-void REMOVE (std::unordered_map<std::string, Tab*> &tables, string command) {
-    string junk, tablename;
-    stringstream ss(command);
-    ss >> junk >> tablename;
-    tables.erase(tablename);
-    cout << "Table " << tablename << " removed" << endl;
-}
-//database functions
-
 //auxiliary functions
 Tab* LOC (std::unordered_map<std::string, Tab*> &tables, string tablename) {
     auto target = tables.find(tablename);
     if (target == tables.end()) throw runtime_error(tablename + " does not name a table in the database");
     return target->second;
 }
-//auxiliary functions
-
-//table interface functions
-void INSERT (std::unordered_map<std::string, Tab*> &tables, string command) {
-    string junk, tablename;
-    stringstream ss(command);
-    int N = 0;
-    ss >> junk >> junk >> tablename >> N;
-    Tab* target = nullptr;
-    try {
-        target = LOC(tables, tablename);
-    }
-    catch (const exception& e) {
-        cout << "Error during INSERT: " << e.what() << endl;
-    } 
-    target->insert(N);
-}
-void PRINT (std::unordered_map<std::string, Tab*> &tables, string command) {
-    string junk, tablename;
-    stringstream ss(command);
-    int N = 0;
-    ss >> junk >> junk >> tablename >> N;
-    vector<string> colnames;
-    Tab* target = nullptr;
-    try {
-        target = LOC(tables, tablename);
-    } catch (const exception& e) {
-        cout << "Error during PRINT: " << e.what() << endl;
-        return;
-    }
-    bool quiet = target->quiet;
-    for (size_t n = 0; n < size_t(N); n++) {
-        ss >> junk;
-        try {target->findCol(junk);}
-        catch (const exception& e) { 
-            cout << "Error during PRINT: " << e.what() << endl;
-            return;
-        }
-        colnames.push_back(junk);
-    }
-    ss >> junk;
-    size_t M = 0;
-    if (junk == "WHERE") {
-        string colname;
-        char OP;
-        size_t col = 0;
-        ss >> colname >> OP;
-        try {col = target->findCol(colname);}
-        catch (const exception& e) { 
-            cout << "Error during PRINT: " << e.what() << endl;
-            return;
-        }
-        string type = target->findType(col);
-        TableEntry* val = nullptr;
-        if (type == "double") {
-            double temp = 0.0;
-            ss >> temp;
-            val = new TableEntry{temp};
-        } else if (type == "string") {
-            string temp;
-            ss >> temp;
-            val = new TableEntry{temp};
-        } else if (type == "int") {
-            int temp = 0;
-            ss >> temp;
-            val = new TableEntry{temp};
-        } else if (type == "bool") {
-            string word;
-            ss >> word;
-            bool temp = (word == "true");
-            val = new TableEntry{temp};
-        }
-        ColComp comp(col, OP, *val, target);
-        M = target->print(colnames, quiet, comp);
-        delete val;
-    } else {
-        M = target->print(colnames, quiet);
-    }
-    cout << "Printed " << M << " matching rows from " << tablename << endl;
-}
-void DELETE (std::unordered_map<std::string, Tab*> &tables, string command) {
-    string junk, tablename, colname;
-    char OP;
-    size_t col = 0;
-    stringstream ss(command);
-    ss >> junk >> junk >> tablename >> junk >> colname >> OP;
-    Tab* target = nullptr;
-    try {
-        target = LOC(tables, tablename);
-    } catch (const exception& e) {
-        cout << "Error during DELETE: " << e.what() << endl;
-        return;
-    } try {
-        col = target->findCol(colname);
-    } catch (const exception& e) {
-        cout << "Error during DELETE: " << e.what() << endl;
-        return;
-    }
-    string type = target->findType(col);
-    TableEntry* val = nullptr;
+TableEntry PRODUCE (string type) {
     if (type == "double") {
-        double temp;
-        ss >> temp;
-        val = new TableEntry{temp};
+        double temp = 0.0;
+        cin >> temp;
+        return TableEntry{temp};
     } else if (type == "string") {
         string temp;
-        ss >> temp;
-        val = new TableEntry{temp};
+        cin >> temp;
+        return TableEntry{temp};
     } else if (type == "int") {
-        int temp;
-        ss >> temp;
-        val = new TableEntry{temp};
+        int temp = 0;
+        cin >> temp;
+        return TableEntry{temp};
     } else if (type == "bool") {
         string word;
-        ss >> word;
+        cin >> word;
         bool temp = (word == "true");
-        val = new TableEntry{temp};
-    }
-    ColComp comp(col, OP, *val, target);
-    //target->makeIndex(true, colname);
-    size_t M = 0;
-    try {
-        M = target->sift(colname, comp);
-    } catch (const exception& e) {
-        cout << "Error during INSERT: " << e.what() << endl;
-        return;
-    } 
-    delete val;
-    cout << "Deleted " << M << " rows from " << tablename << endl;
-}
-void GENERATE (std::unordered_map<std::string, Tab*> &tables, std::unordered_map<std::string, Index*> &indices, string command) {
-    string junk, tablename, indextype, colname;
-    stringstream ss(command);
-    ss >> junk >> junk >> tablename >> indextype >> junk >> junk >> colname;
-    Tab* target = nullptr;
-    try {
-        target = LOC(tables, tablename);
-    } catch (const exception& e) {
-        cout << "Error during GENERATE: " << e.what() << endl;
-        return;
-    }
-    size_t i = 0;
-    try {
-        i = target->findCol(colname);
-    } catch (const exception& e) {
-        cout << "Error during GENERATE: " << e.what() << endl;
-        return;
-    }
-    //target->makeIndex((indextype == "bst"), colname);
-    if (indices.count(tablename) == 0) {
-        Index* her = new Index((indextype == "bst"), i, target);
-        indices.emplace(tablename, her);
+        return TableEntry{temp};
     } else {
-        indices[tablename]->reindex((indextype == "bst"), i, target);
-    } cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << indices[tablename]->size() << " distinct keys\n"; 
+        throw runtime_error("unknown type\n");
+        return TableEntry{1};
+    }
 }
-void JOIN (unordered_map<string, Tab*> &tables, string command, bool quiet) {
-    string junk, tablename1, tablename2, colname1, colname2;
-    size_t N = 0;
-    size_t i_1 = 0;
-    size_t i_2 = 0;
-    vector<size_t> cols;
-    vector<bool> modes;
-    stringstream ss(command);
-    ss  >> junk >> tablename1 >> junk >> tablename2 
-        >> junk >> colname1 >> junk >> colname2
-        >> junk >> junk >> N;
-    Tab* target1 = nullptr;
-    Tab* target2 = nullptr;
-    try {
-        target1 = LOC(tables, tablename1);
-    } catch (const exception& e) {
-        cout << "Error during JOIN: " << e.what() << endl;
-        return;
-    } try {
-        target2 = LOC(tables, tablename2);
-    } catch (const exception& e) {
-        cout << "Error during JOIN: " << e.what() << endl;
-        return;
-    }
-    try {
-        i_1 = target1->findCol(colname1);
-    } catch (const exception& e) {
-        cout << "Error during JOIN: " << e.what() << endl;
-        return;
-    }
-    try {
-        i_2 = target2->findCol(colname2);
-    } catch (const exception& e) {
-        cout << "Error during JOIN: " << e.what() << endl;
-        return;
-    }
-    for (size_t c = 0; c < N; c++) {
-        string temp_name;
-        size_t temp_mode = 0;
-        ss >> temp_name >> temp_mode;
-        size_t temp_i = 0;
-        try {
-            if(temp_mode == 1) temp_i = target1->findCol(temp_name);
-            else               temp_i = target2->findCol(temp_name);
-        } catch (const exception& e) {
-            cout << "Error during JOIN: " << e.what() << endl;
-            return;
-        }
-        cols.push_back(temp_i);
-        modes.push_back((temp_mode == 2));
-    }
-    target1->join(target2, i_1, i_2, cols, modes, quiet);
-}
-//table interface functions
+//auxiliary functions
 
 //TAB FUNCTIONS
-Tab::Tab(std::string tablename, std::vector<std::string> types_in, std::vector<std::string> names_in, bool quiet_in) : name(tablename), quiet(quiet_in), types(types_in), names(names_in) {
+Tab::Tab(std::string tablename, std::vector<std::string> types_in, std::vector<std::string> names_in, bool quiet_in) : 
+        name(tablename), quiet(quiet_in), types(types_in), names(names_in) {
     cout << "New table " << name << " with column(s) ";
     for (auto t : names) {
         cout << t << " ";
@@ -292,8 +73,9 @@ Tab &Tab::operator=(const Tab& rhs) {
 }
 void Tab::insert(int N) {
     size_t startN = data.size();
+    string line;
+    getline(cin, line);
     for (int r = 0; r < N; r++) {
-        string line;
         getline(cin, line);
         Row temp(types, line);
         data.push_back(temp);
@@ -342,9 +124,6 @@ size_t Tab::print(vector<std::string> cols, bool quiet, ColComp comp) {
             }
         } return M;
     }
-/*void Tab::makeIndex(bool order, string col) {
-   this->i-> 
-}*/
 size_t Tab::findCol (string colname) {
     size_t col = 0;
     for(size_t q = 0; q < names.size(); q++) {
@@ -376,8 +155,10 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
     size_t M = 0;
     if (!quiet) {
         for (size_t u = 0; u < cols.size(); u++) {
-            if (modes[u]) cout << names[cols[u]] << ' ';
-            else cout << other->names[cols[u]] << ' ';
+            string temp;
+            if (!modes[u]) temp = names[cols[u]];
+            else temp = other->names[cols[u]];
+            cout << temp << ' ';
         } cout << endl;
     } for (Row* her = &(data.front()); her != &*(data.end()); her++) {
         ColComp comp(col2, '=', (*her)[col1], other);
@@ -474,10 +255,6 @@ Tab::Row* &Index::operator() (TableEntry x) {
     if (order) return (o[x]);
     else return (u[x]);
 }
-/*Index::Index(vector<string> names, vector<Tab::Row> &rawData) {
-    order = true;
-    reindex(order, "name", names, rawData);
-}*/
 Index::Index(bool order_in, size_t col, vector<Tab::Row> &rawData) {
     if (order_in) {
         //map<TableEntry, Tab::Row*> temp;

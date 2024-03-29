@@ -6,21 +6,15 @@
 
 using namespace std;
 
-void CREATE (std::unordered_map<std::string, Tab*> &tables, std::string command, bool quiet);
-void REMOVE (std::unordered_map<std::string, Tab*> &tables, std::string command);
-void QUIT (std::unordered_map<std::string, Tab*> &tables);
-
-void INSERT (std::unordered_map<std::string, Tab*> &tables, std::string command);
-void PRINT (std::unordered_map<std::string, Tab*> &tables, std::string command);
-void DELETE (std::unordered_map<std::string, Tab*> &tables, std::string command);
-void JOIN (std::unordered_map<std::string, Tab*> &tables, std::string command, bool quiet);
-void GENERATE (std::unordered_map<std::string, Tab*> &tables, std::unordered_map<std::string, Index*> &indices, std::string command);
+Tab* LOC (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
+TableEntry PRODUCE (string type);
 
 int main (int argc, char* argv[]) {
     // step one: setup
     unordered_map<string, Tab*> tables;
     unordered_map<string, Index*> indices;
     ios_base::sync_with_stdio(false);
+    cout.clear();
     cin >> std::boolalpha;
     cout << std::boolalpha;
 
@@ -54,44 +48,220 @@ int main (int argc, char* argv[]) {
     // step two: loop
     string line;
     cout << "% ";
-    while (getline(cin, line)) {
+    while (cin >> line) {
         char c = line[0];
         switch (c) {
-            case 'C':
-                CREATE(tables, line, quiet);
+            case 'C' : { //CREATE
+                string junk, tablename;
+                int N = 0;
+                cin >> tablename >> N;
+                vector<string> types, names;
+                for (int q = 0; q < N; q++) {
+                    cin >> junk;
+                    types.push_back(junk);
+                } for (int q = 0; q < N; q++) {
+                    cin >> junk;
+                    names.push_back(junk);
+                }
+                Tab* t = new Tab(tablename, types, names, quiet);
+                tables.emplace(tablename,t);
                 break;
-            case 'Q':
-                QUIT(tables);
+            } case 'Q': { //QUIT
+                for (auto & [ key, value ] : tables) {
+                    delete value;
+                }
+                cout << "Thanks for being silly!" << endl;
                 return 0;
                 break;
-            case '#':
+            } case '#': { //#COMMENT
+                string junk;
+                getline(cin, junk);
                 break;
-            case 'R':
-                REMOVE(tables, line);
+            } case 'R': { //REMOVE
+                string junk, tablename;
+                cin >> tablename;
+                delete tables[tablename];
+                tables.erase(tablename);
+                if (indices.count(tablename) != 0) {
+                    delete indices[tablename];
+                    indices.erase(tablename);
+                }
+                cout << "Table " << tablename << " removed" << endl;
                 break;
-            case 'I':
-                INSERT(tables, line);
+            } case 'I': { //INSERT
+                string junk, tablename;
+                int N = 0;
+                cin >> junk >> tablename >> N >> junk;
+                Tab* target = nullptr;
+                try {
+                    target = LOC(tables, tablename);
+                }
+                catch (const exception& e) {
+                    cout << "Error during INSERT: " << e.what() << endl;
+                } 
+                target->insert(N);
                 break;
-            case 'P':
-                PRINT(tables, line);
+            } case 'P': { //PRINT
+                string junk, tablename;
+                int N = 0;
+                cin >> junk >> tablename >> N;
+                vector<string> colnames;
+                Tab* target = nullptr;
+                try {
+                    target = LOC(tables, tablename);
+                } catch (const exception& e) {
+                    cout << "Error during PRINT: " << e.what() << endl;
+                    break;
+                }
+                bool quiet = target->quiet;
+                for (size_t n = 0; n < size_t(N); n++) {
+                    cin >> junk;
+                    try {target->findCol(junk);}
+                    catch (const exception& e) { 
+                        cout << "Error during PRINT: " << e.what() << endl;
+                        break;
+                    }
+                    colnames.push_back(junk);
+                }
+                cin >> junk;
+                size_t M = 0;
+                if (junk == "WHERE") {
+                    string colname;
+                    char OP;
+                    size_t col = 0;
+                    cin >> colname >> OP;
+                    try {col = target->findCol(colname);}
+                    catch (const exception& e) { 
+                        cout << "Error during PRINT: " << e.what() << endl;
+                        break;
+                    }
+                    string type = target->findType(col);
+                    ColComp comp(col, OP, PRODUCE(type), target);
+                    M = target->print(colnames, quiet, comp);
+                } else {
+                    M = target->print(colnames, quiet);
+                }
+                cout << "Printed " << M << " matching rows from " << tablename << endl;
                 break;
-            case 'D':
-                DELETE(tables, line);
+            } case 'D': { //DELETE
+                string junk, tablename, colname;
+                char OP;
+                size_t col = 0;
+                cin >> junk >> tablename >> junk >> colname >> OP;
+                Tab* target = nullptr;
+                try {
+                    target = LOC(tables, tablename);
+                } catch (const exception& e) {
+                    cout << "Error during DELETE: " << e.what() << endl;
+                    break;
+                } try {
+                    col = target->findCol(colname);
+                } catch (const exception& e) {
+                    cout << "Error during DELETE: " << e.what() << endl;
+                    break;
+                }
+                string type = target->findType(col);
+                ColComp comp(col, OP, PRODUCE(type), target);
+                //target->makeIndex(true, colname);
+                size_t M = 0;
+                try {
+                    M = target->sift(colname, comp);
+                } catch (const exception& e) {
+                    cout << "Error during INSERT: " << e.what() << endl;
+                    break;
+                }
+                cout << "Deleted " << M << " rows from " << tablename << endl;
                 break;
-            case 'J':
-                JOIN(tables, line, quiet);
+            } case 'J': { //JOIN
+                string junk, tablename1, tablename2, colname1, colname2;
+                size_t N = 0;
+                size_t i_1 = 0;
+                size_t i_2 = 0;
+                vector<size_t> cols;
+                vector<bool> modes;
+                cin  >> tablename1 >> junk >> tablename2 
+                    >> junk >> colname1 >> junk >> colname2
+                    >> junk >> junk >> N;
+                Tab* target1 = nullptr;
+                Tab* target2 = nullptr;
+                try {
+                    target1 = LOC(tables, tablename1);
+                } catch (const exception& e) {
+                    cout << "Error during JOIN: " << e.what() << endl;
+                    break;
+                } try {
+                    target2 = LOC(tables, tablename2);
+                } catch (const exception& e) {
+                    cout << "Error during JOIN: " << e.what() << endl;
+                    break;
+                }
+                try {
+                    i_1 = target1->findCol(colname1);
+                } catch (const exception& e) {
+                    cout << "Error during JOIN: " << e.what() << endl;
+                    break;
+                }
+                try {
+                    i_2 = target2->findCol(colname2);
+                } catch (const exception& e) {
+                    cout << "Error during JOIN: " << e.what() << endl;
+                    break;
+                }
+                for (size_t c = 0; c < N; c++) {
+                    string temp_name;
+                    size_t temp_mode = 0;
+                    cin >> temp_name >> temp_mode;
+                    size_t temp_i = 0;
+                    try {
+                        if(temp_mode == 1) temp_i = target1->findCol(temp_name);
+                        else               temp_i = target2->findCol(temp_name);
+                    } catch (const exception& e) {
+                        cout << "Error during JOIN: " << e.what() << endl;
+                        break;
+                    }
+                    cols.push_back(temp_i);
+                    modes.push_back((temp_mode == 2));
+                }
+                target1->join(target2, i_1, i_2, cols, modes, quiet);
                 break;
-            case 'G':
-                GENERATE(tables, indices, line);
+            } case 'G': { //GENERATE
+                string junk, tablename, indextype, colname;
+                cin >> junk >> tablename >> indextype >> junk >> junk >> colname;
+                Tab* target = nullptr;
+                try {
+                    target = LOC(tables, tablename);
+                } catch (const exception& e) {
+                    cout << "Error during GENERATE: " << e.what() << endl;
+                    break;
+                }
+                size_t i = 0;
+                try {
+                    i = target->findCol(colname);
+                } catch (const exception& e) {
+                    cout << "Error during GENERATE: " << e.what() << endl;
+                    break;
+                }
+                //target->makeIndex((indextype == "bst"), colname);
+                if (indices.count(tablename) == 0) {
+                    Index* her = new Index((indextype == "bst"), i, target);
+                    indices.emplace(tablename, her);
+                } else {
+                    indices[tablename]->reindex((indextype == "bst"), i, target);
+                } cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << indices[tablename]->size() << " distinct keys\n"; 
                 break;
-            default:
-                cout << "Error: unrecognized command\n";
+            } default: { //Error: unrecognized command
+                cout << "Error: unrecognized command" << ": \"" << line << "\"" << endl;
                 break;
+            }
         }
+        //cin >> line;
         cout << "% ";
     }
 
+    //failsafe quit (just in case)
+    for (auto & [ key, value ] : tables) {
+        delete value;
+    }
     cerr << "exited without QUIT()\n";
-    QUIT(tables);
-    return(1);
+    return 1;
 }
