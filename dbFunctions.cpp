@@ -45,6 +45,7 @@ TableEntry PRODUCE (string type) {
 //TAB FUNCTIONS
 Tab::Tab(std::string tablename, std::vector<std::string> types_in, std::vector<std::string> names_in, bool quiet_in) : 
         name(tablename), quiet(quiet_in), types(types_in), names(names_in) {
+    i = nullptr;
     std::cout << "New table " << name << " with column(s) ";
     for (auto t : names) {
         std::cout << t << " ";
@@ -55,7 +56,7 @@ Tab::Tab(const Tab& other) {
     types = other.types;
     names = other.names;
     quiet = other.quiet;
-    //i = new Index(names, data);
+    i = nullptr;
     for (auto her : other.data) {
         data.push_back(her);
     }
@@ -65,7 +66,7 @@ Tab &Tab::operator=(const Tab& rhs) {
     types = rhs.types;
     names = rhs.names;
     quiet = rhs.quiet;
-    //i = new Index(names, data);
+    i = nullptr;
     for (auto her : rhs.data) {
         data.push_back(her);
     }
@@ -102,7 +103,7 @@ size_t Tab::print(vector<std::string> cols, bool quiet) {
         M++;
     } return M;
 }
-size_t Tab::print(vector<std::string> cols, unordered_map<string, Index*> &indices, bool quiet, ColComp comp) {
+size_t Tab::print(vector<std::string> cols, bool quiet, ColComp comp) {
         //map<string,vector<TableEntry>> her(data.begin(), data.end());
         vector<size_t> iCols;
         size_t M = 0;
@@ -115,10 +116,10 @@ size_t Tab::print(vector<std::string> cols, unordered_map<string, Index*> &indic
                 }
             } 
         } std::cout << endl;
-        if (indices.count(name) == 1 && indices.at(name)->order) {
-            Index* currentIndex = indices[name];
+        if (this->i != nullptr && this->i->order) {
+            if (this->i->size() == 0) return 0;
             map<TableEntry, Row*>::iterator it;
-            for(it = currentIndex->o.begin(); it != currentIndex->o.end(); it++) {
+            for(it = this->i->o.begin(); it != this->i->o.end(); it++) {
             //for(auto & [ key, elt ] : currentIndex->o) { //copy constructing here (bad)
                 Row* elt = it->second;
                 if (comp(elt)) {
@@ -157,7 +158,7 @@ size_t Tab::sift(/*string col,*/ ColComp comp) {
     } catch (const exception& e) {
         throw e;
     }*/
-    vector<Tab::Row> temp;
+    deque<Tab::Row> temp;
     for (size_t a = 0; a < data.size(); a++) {
         if (!comp(a)) {
             temp.push_back(data[a]);
@@ -290,7 +291,7 @@ Index::Index(bool order_in, size_t col, vector<Tab::Row> &rawData) {
     }
 }
 Index::Index(bool order_in, size_t col, Tab* target) {
-    vector<Tab::Row> rawData = target->data;
+    deque<Tab::Row> &rawData = target->data;
     if (order_in) {
         for (size_t n = 0; n < rawData.size(); n++) {
             Tab::Row* her = &rawData[n];
@@ -306,8 +307,8 @@ Index::Index(bool order_in, size_t col, Tab* target) {
     }
 }
 void Index::reindex(bool order_in, size_t col, Tab* target) {
-    vector<Tab::Row> rawData = target->data;
-    vector<string> names = target->names;
+    deque<Tab::Row> &rawData = target->data;
+    //vector<string> &names = target->names;
     o.clear();
     u.clear();
     if (order_in) {

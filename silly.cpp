@@ -12,7 +12,7 @@ TableEntry PRODUCE (string type);
 int main (int argc, char* argv[]) {
     // step one: setup
     unordered_map<string, Tab*> tables;
-    unordered_map<string, Index*> indices;
+    //unordered_map<string, Index*> indices;
     ios_base::sync_with_stdio(false);
     cout.clear();
     cin >> std::boolalpha;
@@ -82,10 +82,6 @@ int main (int argc, char* argv[]) {
                 cin >> tablename;
                 delete tables[tablename];
                 tables.erase(tablename);
-                if (indices.count(tablename) != 0) {
-                    delete indices[tablename];
-                    indices.erase(tablename);
-                }
                 cout << "Table " << tablename << " removed" << endl;
                 break;
             } case 'I': { //INSERT
@@ -137,7 +133,7 @@ int main (int argc, char* argv[]) {
                     }
                     string type = target->findType(col);
                     ColComp comp(col, OP, PRODUCE(type), target);
-                    M = target->print(colnames, indices, quiet, comp);
+                    M = target->print(colnames, quiet, comp);
                 } else {
                     M = target->print(colnames, quiet);
                 }
@@ -234,20 +230,19 @@ int main (int argc, char* argv[]) {
                     cout << "Error during GENERATE: " << e.what() << endl;
                     break;
                 }
-                size_t i = 0;
+                size_t y = 0;
                 try {
-                    i = target->findCol(colname);
+                    y = target->findCol(colname);
                 } catch (const exception& e) {
                     cout << "Error during GENERATE: " << e.what() << endl;
                     break;
                 }
                 //target->makeIndex((indextype == "bst"), colname);
-                if (indices.count(tablename) == 0) {
-                    Index* her = new Index((indextype == "bst"), i, target);
-                    indices.emplace(tablename, her);
+                if (target->i == nullptr) {
+                    target->i = new Index((indextype == "bst"), y, target);
                 } else {
-                    indices[tablename]->reindex((indextype == "bst"), i, target);
-                } cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << indices[tablename]->size() << " distinct keys\n"; 
+                    target->i->reindex((indextype == "bst"), y, target);
+                } cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << target->i->size() << " distinct keys\n"; 
                 break;
             } default: { //Error: unrecognized command
                 cout << "Error: unrecognized command" << ": \"" << line << "\"" << endl;

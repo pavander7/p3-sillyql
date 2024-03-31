@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <queue>
 
 class ColComp;
 class Index;
@@ -19,7 +20,7 @@ public:
 
     void insert(int N);
     std::size_t print(std::vector<std::string> cols, bool quiet);
-    std::size_t print(std::vector<std::string> cols, std::unordered_map<std::string, Index*> &indices, bool quiet, ColComp comp);
+    std::size_t print(std::vector<std::string> cols, bool quiet, ColComp comp);
     std::size_t sift(/*std::string col,*/ ColComp comp);
     void join(Tab* other, std::size_t col1, std::size_t col2, 
             std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
@@ -33,8 +34,10 @@ public:
     friend class ColComp;
     friend class Index;
 
+    Index* i;
+
 private:
-    std::vector<Row> data;
+    std::deque<Row> data;
     std::vector<std::string> types, names;
 };
 
@@ -61,7 +64,7 @@ private:
     std::size_t col;
     TableEntry val;
     char OP;
-    std::vector<Tab::Row>* data;
+    std::deque<Tab::Row>* data;
 };
 
 class Index {
