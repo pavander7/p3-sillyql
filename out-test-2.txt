@@ -1,0 +1,231 @@
+% % New table clubbers with column(s) firstname lastname section points gradyear exec friar created
+% firstname points 
+Printed 0 matching rows from clubbers
+% Added 32 rows to clubbers from position 0 to 31
+% firstname section 
+reilly tenor1 
+kyle tenor1 
+derek tenor1 
+leo tenor1 
+al tenor1 
+brad tenor2 
+paul tenor2 
+jack tenor2 
+johnny tenor2 
+jared tenor2 
+arthur baritone 
+duncan baritone 
+joe baritone 
+nathan baritone 
+charlie baritone 
+nick bass 
+cole bass 
+denaly bass 
+kallen bass 
+oliver bass 
+siku tenor1 
+major tenor1 
+brenton tenor1 
+carsten tenor2 
+lars tenor2 
+gabe tenor2 
+jack baritone 
+ben baritone 
+shashank baritone 
+erik bass 
+alex bass 
+gavin bass 
+Printed 32 matching rows from clubbers
+% firstname gradyear exec 
+derek 2024 false 
+jack 2025 false 
+johnny 2025 false 
+jared 2024 false 
+arthur 2028 false 
+charlie 2023 false 
+denaly 2023 false 
+kallen 2026 false 
+oliver 2024 false 
+major 2024 false 
+brenton 2024 false 
+carsten 2024 false 
+lars 2025 false 
+gabe 2026 false 
+jack 2024 false 
+ben 2026 false 
+shashank 2023 false 
+erik 2025 false 
+alex 2026 false 
+gavin 2026 false 
+Printed 20 matching rows from clubbers
+% Deleted 4 rows from clubbers
+% points lastname section 
+673.2 obrien tenor2 
+453.9 vanderwoude tenor2 
+452.8 kernan tenor2 
+301.2 serra tenor2 
+206.3 bonebright tenor2 
+189.8 higbie tenor2 
+177.4 martin tenor2 
+148.5 ashley tenor2 
+Printed 8 matching rows from clubbers
+% Created bst index for table clubbers on column points, with 28 distinct keys
+% New table order with column(s) firstname lastname row col plug created
+% Added 25 rows to order from position 0 to 24
+% lastname firstname 
+vanderwoude paul 
+sinha pratyush 
+antony nick 
+hickman lee 
+stevens major 
+rusinowski jack 
+min denaly 
+buckley reilly 
+coon kyle 
+emmelot jacob 
+Printed 10 matching rows from order
+% Created bst index for table order on column row, with 10 distinct keys
+% lastname firstname section row col friar plug 
+buckley reilly tenor1 4 25 true true 
+coon kyle tenor1 3 13 true true 
+kucich al tenor1 2 1 false false 
+obrien brad tenor2 1 11 false false 
+vanderwoude paul tenor2 1 7 false true 
+kernan jack tenor2 2 7 true true 
+mcconaughey duncan baritone 2 4 false false 
+dooley joe baritone 6 16 false false 
+shatz nathan baritone 8 20 false false 
+christians cole bass 1 9 true false 
+schwark kallen bass 9 8 false false 
+stevens major tenor1 1 6 false true 
+higbie carsten tenor2 7 2 false false 
+martin lars tenor2 12 1 false false 
+wildes jack baritone 2 7 false true 
+radmore ben baritone 1 8 false false 
+Printed 16 rows from joining clubbers to order
+% lastname firstname section 
+Printed 0 rows from joining clubbers to clubbers
+% lastname firstname lastname firstname row col col 
+stover mark stover mark 0 0 0 
+vanderwoude paul vanderwoude paul 1 7 7 
+vanderwoude paul spruce nick 1 7 6 
+vanderwoude paul christans cole 1 7 9 
+vanderwoude paul stevens major 1 7 6 
+vanderwoude paul radmore ben 1 7 8 
+vanderwoude paul obrien brad 1 7 11 
+vanderwoude paul flowers dillon 1 7 1 
+spruce nick vanderwoude paul 1 6 7 
+spruce nick spruce nick 1 6 6 
+spruce nick christans cole 1 6 9 
+spruce nick stevens major 1 6 6 
+spruce nick radmore ben 1 6 8 
+spruce nick obrien brad 1 6 11 
+spruce nick flowers dillon 1 6 1 
+christans cole vanderwoude paul 1 9 7 
+christans cole spruce nick 1 9 6 
+christans cole christans cole 1 9 9 
+christans cole stevens major 1 9 6 
+christans cole radmore ben 1 9 8 
+christans cole obrien brad 1 9 11 
+christans cole flowers dillon 1 9 1 
+stevens major vanderwoude paul 1 6 7 
+stevens major spruce nick 1 6 6 
+stevens major christans cole 1 6 9 
+stevens major stevens major 1 6 6 
+stevens major radmore ben 1 6 8 
+stevens major obrien brad 1 6 11 
+stevens major flowers dillon 1 6 1 
+radmore ben vanderwoude paul 1 8 7 
+radmore ben spruce nick 1 8 6 
+radmore ben christans cole 1 8 9 
+radmore ben stevens major 1 8 6 
+radmore ben radmore ben 1 8 8 
+radmore ben obrien brad 1 8 11 
+radmore ben flowers dillon 1 8 1 
+obrien brad vanderwoude paul 1 11 7 
+obrien brad spruce nick 1 11 6 
+obrien brad christans cole 1 11 9 
+obrien brad stevens major 1 11 6 
+obrien brad radmore ben 1 11 8 
+obrien brad obrien brad 1 11 11 
+obrien brad flowers dillon 1 11 1 
+flowers dillon vanderwoude paul 1 1 7 
+flowers dillon spruce nick 1 1 6 
+flowers dillon christans cole 1 1 9 
+flowers dillon stevens major 1 1 6 
+flowers dillon radmore ben 1 1 8 
+flowers dillon obrien brad 1 1 11 
+flowers dillon flowers dillon 1 1 1 
+kucich al kucich al 2 1 1 
+kucich al rusinowski jack 2 1 7 
+kucich al mcconaughey duncan 2 1 4 
+rusinowski jack kucich al 2 7 1 
+rusinowski jack rusinowski jack 2 7 7 
+rusinowski jack mcconaughey duncan 2 7 4 
+mcconaughey duncan kucich al 2 4 1 
+mcconaughey duncan rusinowski jack 2 4 7 
+mcconaughey duncan mcconaughey duncan 2 4 4 
+antony nick antony nick 3 3 3 
+antony nick krumins carter 3 3 2 
+antony nick coon kyle 3 3 13 
+krumins carter antony nick 3 2 3 
+krumins carter krumins carter 3 2 2 
+krumins carter coon kyle 3 2 13 
+coon kyle antony nick 3 13 3 
+coon kyle krumins carter 3 13 2 
+coon kyle coon kyle 3 13 13 
+sinha pratyush sinha pratyush 4 7 7 
+sinha pratyush buckley reilly 4 7 25 
+sinha pratyush emmelot jacob 4 7 5 
+buckley reilly sinha pratyush 4 25 7 
+buckley reilly buckley reilly 4 25 25 
+buckley reilly emmelot jacob 4 25 5 
+emmelot jacob sinha pratyush 4 5 7 
+emmelot jacob buckley reilly 4 5 25 
+emmelot jacob emmelot jacob 4 5 5 
+hickman lee hickman lee 6 3 3 
+hickman lee dooley joe 6 3 16 
+dooley joe hickman lee 6 16 3 
+dooley joe dooley joe 6 16 16 
+higbie carsten higbie carsten 7 2 2 
+svacha breton svacha breton 8 8 8 
+svacha breton shatz nathan 8 8 20 
+shatz nathan svacha breton 8 20 8 
+shatz nathan shatz nathan 8 20 20 
+schwark kallen schwark kallen 9 8 8 
+min denaly min denaly 12 13 13 
+min denaly martin lars 12 13 1 
+martin lars min denaly 12 1 13 
+martin lars martin lars 12 1 1 
+Printed 91 rows from joining order to order
+% lastname firstname lastname firstname row col col 
+vanderwoude paul vanderwoude paul 1 7 7 
+kucich al kucich al 2 1 1 
+sinha pratyush sinha pratyush 4 7 7 
+antony nick antony nick 3 3 3 
+antony nick spruce nick 3 3 6 
+spruce nick antony nick 1 6 3 
+spruce nick spruce nick 1 6 6 
+stover mark stover mark 0 0 0 
+schwark kallen schwark kallen 9 8 8 
+svacha breton svacha breton 8 8 8 
+krumins carter krumins carter 3 2 2 
+hickman lee hickman lee 6 3 3 
+christans cole christans cole 1 9 9 
+stevens major stevens major 1 6 6 
+radmore ben radmore ben 1 8 8 
+rusinowski jack rusinowski jack 2 7 7 
+mcconaughey duncan mcconaughey duncan 2 4 4 
+obrien brad obrien brad 1 11 11 
+min denaly min denaly 12 13 13 
+shatz nathan shatz nathan 8 20 20 
+martin lars martin lars 12 1 1 
+dooley joe dooley joe 6 16 16 
+higbie carsten higbie carsten 7 2 2 
+buckley reilly buckley reilly 4 25 25 
+coon kyle coon kyle 3 13 13 
+emmelot jacob emmelot jacob 4 5 5 
+flowers dillon flowers dillon 1 1 1 
+Printed 27 rows from joining order to order
+% Table clubbers removed
+% Thanks for being silly!

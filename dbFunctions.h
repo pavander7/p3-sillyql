@@ -18,72 +18,62 @@ public:
     Tab(const Tab& other);
     Tab &operator= (const Tab& rhs);
 
-    void insert(int N);
+    void insert(std::size_t N);
     std::size_t print(std::vector<std::string> cols, bool quiet);
     std::size_t print(std::vector<std::string> cols, bool quiet, ColComp comp);
     std::size_t sift(/*std::string col,*/ ColComp comp);
     void join(Tab* other, std::size_t col1, std::size_t col2, 
-            std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
+        std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
+    void indexify(bool order, std::size_t col);
 
-    class Row;
+    std::vector<TableEntry>* rowify(std::vector<std::string> &types);
     std::string name;
     bool quiet;
     std::size_t findCol (const std::string colname);
     std::string findType (const std::size_t col) {return types[col];}
+    std::size_t size () {return data.size();}
 
     friend class ColComp;
     friend class Index;
 
     Index* i;
 
-private:
-    std::deque<Row> data;
-    std::vector<std::string> types, names;
-};
+    ~Tab();
 
-class Tab::Row {
-public:
-    Row(std::vector<std::string> &types, std::string line);
-    TableEntry &operator[] (const std::size_t y) {
-        return rowData[y];
-    }
-    TableEntry at(std::size_t y) {
-        return rowData[y];
-    }
 private:
-    std::vector<TableEntry> rowData;
+    std::vector<std::vector<TableEntry>*> data;
+    std::vector<std::string> types, names;
 };
 
 class ColComp {
 public:
-    ColComp(std::string colname_in, char OP_in, TableEntry val_in, Tab* database);
     ColComp(std::size_t col_in, char OP_in, TableEntry val_in, Tab* database);
-    bool operator() (std::size_t i);
-    bool operator() (Tab::Row *ptr);
-private:
+    bool operator() (std::vector<TableEntry>* ptr);
+
     std::size_t col;
+
+private:
     TableEntry val;
     char OP;
-    std::deque<Tab::Row>* data;
+    std::vector<std::vector<TableEntry>*>* data;
 };
 
 class Index {
 public:
-    //Index(std::vector<std::string> names, std::vector<Tab::Row> &rawData);
-    Index(bool order_in, std::size_t col, std::vector<Tab::Row> &rawData);
     Index(bool order_in, std::size_t col, Tab* target);
-    Tab::Row* &operator() (TableEntry x);
+    std::vector<std::vector<TableEntry>*> &operator() (TableEntry x);
     std::size_t size() {
         if (order) return o.size();
         else return u.size();
-    }
-    //void reindex(bool order_in, std::string col, std::vector<std::string> names, std::vector<Tab::Row> &rawData);
+    } void emplace (std::vector<TableEntry>* elt);
+    void erase (TableEntry key, std::vector<TableEntry>* elt);
     void reindex(bool order_in, std::size_t col, Tab* target);
 
     friend class Tab;
 
 private:
     bool order;
-    std::unordered_map<TableEntry, Tab::Row*> u;
-    std::map<TableEntry, Tab::Row*> o;
+    size_t col;
+    std::unordered_map<TableEntry, std::vector<std::vector<TableEntry>*>> u;
+    std::map<TableEntry, std::vector<std::vector<TableEntry>*>> o;
 };

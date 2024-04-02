@@ -1,0 +1,167 @@
+% % New table dragrace with column(s) franchise country allstars ru season contestants episodes year winner created
+% Added 15 rows to dragrace from position 0 to 14
+% franchise season 
+Printed 0 matching rows from dragrace
+% Added 8 rows to dragrace from position 15 to 22
+% franchise season 
+rpdr 5 
+rpdras 7 
+Printed 2 matching rows from dragrace
+% Added 36 rows to dragrace from position 23 to 58
+% Error during PRINT: network does not name a column in dragrace
+% Error during PRINT: host does not name a column in dragrace
+% New table franchises with column(s) title acronym seasons host cohost network prize cancelled airing created
+% Added 19 rows to franchises from position 0 to 18
+% acronym seasons 
+rpdr 16 
+drt 3 
+rpdruk 5 
+cdr 4 
+drh 2 
+drdu 3 
+dre 3 
+dri 3 
+drf 2 
+drp 2 
+drbe 2 
+drs 1 
+drm 1 
+drbs 1 
+drd 1 
+rpdras 8 
+rpdrukvtw 2 
+cdrcvtw 1 
+dreas 1 
+Printed 19 matching rows from franchises
+% acronym seasons 
+Printed 0 matching rows from franchises
+% Error during JOIN: name does not name a column in dragrace
+% Error during JOIN: episode does not name a table in the database
+% Error during JOIN: acronym does not name a column in dragrace
+% Error during JOIN: name does not name a column in franchises
+% Error during JOIN: winner does not name a column in franchises
+% Error during JOIN: name does not name a column in dragrace
+% % Thanks for being silly!
+ column in franchises
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Printed 58 rows from joining franchises to dragrace
+% Error during JOIN: name does not name a column in dragrace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Printed 58 rows from joining franchises to dragrace
+% % Thanks for being silly!

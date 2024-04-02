@@ -1,0 +1,76 @@
+# mens glee points list
+CREATE clubbers 7 string string string double int bool bool firstname lastname section points gradyear exec friar
+PRINT FROM clubbers 2 firstname points ALL
+INSERT INTO clubbers 32 ROWS
+reilly buckley tenor1 890.8 2024 true true
+kyle coon tenor1 627.5 2024 true true
+derek glaser tenor1 622.8 2024 false false
+leo parikshak tenor1 540.6 2026 true true
+al kucich tenor1 465.3 2024 true false
+brad obrien tenor2 673.2 2025 true false
+paul vanderwoude tenor2 453.9 2025 true false
+jack kernan tenor2 452.8 2025 false true
+johnny serra tenor2 301.2 2025 false false
+jared bonebright tenor2 206.3 2024 false false
+arthur mengozzi baritone 1201.1 2028 false false
+duncan mcconaughey baritone 479.6 2025 true false
+joe dooley baritone 361.4 2024 true false
+nathan shatz baritone 314.8 2025 true false
+charlie whitehead baritone 289.8 2023 false false
+nick antony bass 682.6 2023 true true
+cole christians bass 415.0 2025 true true
+denaly min bass 250.3 2023 false false
+kallen schwark bass 237.5 2026 false false
+oliver vannote bass 230.1 2024 false false
+siku choudhary tenor1 312.8 2026 true false
+major stevens tenor1 297.1 2024 false false
+brenton svacha tenor1 241.7 2024 false true
+carsten higbie tenor2 189.8 2024 false false
+lars martin tenor2 177.4 2025 false false
+gabe ashley tenor2 148.5 2026 false false
+jack wildes baritone 199.4 2024 false false
+ben radmore baritone 169.0 2026 false false
+shashank kalluri baritone 163.3 2023 false false
+erik hansen bass 170.9 2025 false false
+alex hetzler bass 104.8 2026 false false
+gavin tomasco bass 100.1 2026 false false
+PRINT FROM clubbers 2 firstname section ALL
+PRINT FROM clubbers 3 firstname gradyear exec WHERE exec = false
+DELETE FROM clubbers WHERE gradyear < 2024
+PRINT FROM clubbers 3 points lastname section WHERE section = tenor2
+GENERATE FOR clubbers bst INDEX ON points
+CREATE order 5 string string int int bool firstname lastname row col plug 
+INSERT INTO order 25 rows
+paul vanderwoude 1 7 true
+al kucich 2 1 false
+pratyush sinha 4 7 true
+nick antony 3 3 true
+nick spruce 1 6 false
+mark stover 0 0 false
+kallen schwark 9 8 false
+breton svacha 8 8 false
+carter krumins 3 2 false
+lee hickman 6 3 true
+cole christans 1 9 false
+major stevens 1 6 true
+ben radmore 1 8 false
+jack rusinowski 2 7 true
+duncan mcconaughey 2 4 false
+brad obrien 1 11 false
+denaly min 12 13 true
+nathan shatz 8 20 false
+lars martin 12 1 false
+joe dooley 6 16 false
+carsten higbie 7 2 false
+reilly buckley 4 25 true
+kyle coon 3 13 true
+jacob emmelot 4 5 true
+dillon flowers 1 1 false
+PRINT FROM order 2 lastname firstname WHERE plug = true
+GENERATE FOR order bst INDEX ON row
+JOIN clubbers and order WHERE firstname = firstname AND PRINT 7 lastname 1 firstname 2 section 1 row 2 col 2 friar 1 plug 2
+JOIN clubbers and clubbers WHERE firstname = section AND PRINT 3 lastname 2 firstname 2 section 1
+JOIN order and order WHERE row = row AND PRINT 7 lastname 1 firstname 1 lastname 2 firstname 2 row 1 col 1 col 2
+JOIN order and order WHERE firstname = firstname AND PRINT 7 lastname 1 firstname 1 lastname 2 firstname 2 row 1 col 1 col 2
+REMOVE clubbers
+QUIT

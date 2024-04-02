@@ -1,0 +1,99 @@
+#error-checking
+CREATE dragrace 9 string string bool bool int int int int string franchise country allstars ru season contestants episodes year winner
+INSERT INTO dragrace 15 ROWS
+rpdr    usa false true 1 9 9 2009 BeBeZaharaBenet
+rpdr    usa false true 2 12 12 2010 TyraSanchez
+rpdr    usa false true 3 13 16 2011 Raja
+rpdr    usa false true 4 13 14 2012 SharonNeedles
+rpdr    usa false true 5 14 14 2013 JinkxMonsoon
+rpdr    usa false true 6 14 14 2014 BiancaDelRio
+rpdr    usa false true 7 14 14 2015 VioletChachki
+rpdr    usa false true 8 12 10 2016 BobTheDragQueen
+rpdr    usa false true 9 14 14 2017 SashaVelour
+rpdr    usa false true 10 14 14 2018 Aquaria
+rpdr    usa false true 11 15 14 2019 YvieOddly
+rpdr    usa false true 12 13 14 2020 JaidaEssenceHall
+rpdr    usa false true 13 13 16 2021 Symone
+rpdr    usa false true 14 14 16 2022 WillowPill
+rpdr    usa false true 15 16 16 2023 SashaColby
+PRINT FROM dragrace 2 franchise season WHERE allstars = true
+INSERT INTO dragrace 8 ROWS
+rpdras usa true true 1 12 6 2012 ChadMichaels
+rpdras usa true true 2 10 9 2016 Alaska
+rpdras usa true true 3 10 8 2018 TrixieMattel
+rpdras usa true true 4 10 10 2018 MonetXChange
+rpdras usa true true 5 10 8 2020 SheaCoulee
+rpdras usa true true 6 13 12 2021 KylieSoniqueLove
+rpdras usa true true 7 8 12 2022 JinkxMonsoon
+rpdras usa true true 8 12 12 2023 Jimbo
+PRINT FROM dragrace 2 franchise season WHERE winner = JinkxMonsoon
+INSERT INTO dragrace 36 ROWS
+drt thailand false false 1 10 8 2018 NataliaPliacam
+drt thailand false false 2 14 13 2019 AngeleAnang
+rpdruk uk false true 1 10 8 2019 TheVivienne
+rpdruk uk false true 2 12 10 2021 LawrenceChaney
+rpdruk uk false true 3 12 10 2021 KrystalVersace
+rpdruk uk false true 4 12 10 2022 DannyBeard
+rpdruk uk false true 5 12 10 2023 GingerJohnson
+cdr canada false false 1 12 10 2020 Priyanka
+cdr canada false false 2 12 10 2021 IcesisCouture
+cdr canada false false 3 12 9 2022 GiseleLullaby
+cdr canada false false 4 11 9 2023 Venus
+drh netherlands false false 1 10 8 2020 EnvyPeru
+drh netherlands false false 2 10 8 2021 VanessaVanCartier
+drdu newzealand true false 1 10 8 2021 KitaMean
+drdu newzealand true false 2 10 8 2022 SpankieJackzon
+drdu newzealand true false 3 10 8 2023 IvisAvisLoren
+dre spain false false 1 10 9 2021 CarmenFarala
+dre spain false false 2 12 11 2022 SharonNeedles
+dre spain false false 3 13 11 2023 Pitita
+dri italy false false 1 8 6 2021 ElecktraBionic
+dri italy false false 2 10 8 2022 LaDiamond
+dri italy false false 3 13 12 2023 LinaGalore
+drf france false false 1 10 8 2022 Paloma
+drf france false false 2 11 9 2023 Keiona
+drp philippines false false 1 12 10 2022 PreciousPaulaNicole
+drp philippines false false 2 12 10 2023 CaptivatingKatkat
+drbe belgium false false 1 10 8 2023 DragCouenne
+drbe belgium false false 2 9 8 2024 Alvilda
+drs sweden false false 1 9 8 2023 AdmiraThunderpussy
+drm mexico false false 1 11 12 2023 CristianPeralta
+drbs brazil false false 1 12 12 2023 Organzza
+drg germany false false 1 11 12 2023 PandoraNox
+rpdrukvtw uk true true 1 9 6 2022 BluHydrangea
+rpdrukvtw uk true true 2 11 8 2024 TiaKofi
+cdrcvtw canada true false 1 9 6 2022 RajahOHara
+dreas spain true false 1 9 7 2024 DragSethlas
+PRINT FROM dragrace 4 franchise season year network WHERE episodes > 6
+PRINT FROM dragrace 4 franchise season year winner WHERE host = rupaul
+CREATE franchises 9 string string int string string string double bool bool title acronym seasons host cohost network prize cancelled airing
+INSERT INTO franchises 19 ROWS
+RupaulsDragRace rpdr 16 Rupaul MichelleVisage MTV 200000 false true
+DragRaceThailand drt 3 PanginaHeals ArtArya LineTV 500000 false false
+RupaulsDragRaceUK rpdruk 5 Rupaul MichelleVisage BBCThree 0 false false
+CanadasDragRace cdr 4 BrookeLynnHytes BradGoreski Crave 100000 false false
+DragRaceHolland drh 2 FredVanLeer none Videoland 15000 true false
+DragRaceDownUnder drdu 3 MichelleVisage RhysNicholson TVNZ2 50000 false false
+DragRaceEspana dre 3 SupremmeDeLuxe LosJavis AtresplayerPremium 50000 false false
+DragRaceItaly dri 3 Priscilla ChiaraFranchini MTV 20000 true false
+DragRaceFrance drf 2 NickyDoll DapheBuerki Slash 40000 false false
+DragRacePhilippines drp 2 PaoloBallestreros JigglyCaliente HBOGo 1000000 false false
+DragRaceBelgium drbe 2 RitaBaga Mustii Tipik 20000 false true
+DragRaceSweden drs 1 RobertFux Kayo SVT1 100000 true false
+DragRaceMexico drm 1 Valentina LolitaBanana MTV 550000 false false
+DragRaceBrasil drbs 1 GragQueen BrunaBraga MTV 150000 false false
+DragRaceGermany drd 1 BarbieBreakout GianniJovanovic MTV 100000 true false
+RupaulsDragRaceAllStars rpdras 8 Rupaul MichelleVisage ParamountPlus 200000 false false
+RupaulsDragRaceUKVersusTheWorld rpdrukvtw 2 Rupaul MichelleVisage BBCThree 50000 false true
+CanadasDragRaceCanadaVersusTheWorld cdrcvtw 1 BrookeLynnHytes BradGoreski Crave 100000 false false
+DragRaceEspanaAllStars dreas 1 SupremmeDeLuxe LosJavis AtresplayerPremium 50000 false true
+PRINT FROM franchises 2 acronym seasons ALL
+PRINT FROM franchises 2 acronym seasons WHERE host = "Rupaul"
+JOIN franchises AND dragrace WHERE acronym = name AND PRINT 6 name 1 name 2 year 2 host 1 season 2 winner 2
+JOIN franchises AND episode WHERE acronym = name AND PRINT 6 name 1 name 2 year 2 host 1 season 2 winner 2
+JOIN franchises AND dragrace WHERE acronym = acronym AND PRINT 6 name 1 name 2 year 2 host 1 season 2 winner 2
+JOIN franchises AND dragrace WHERE acronym = franchise AND PRINT 6 name 1 host 2 year 2 host 1 season 2 winner 2
+JOIN franchises AND dragrace WHERE acronym = franchise AND PRINT 6 winner 1 name 2 year 2 host 1 season 2 winner 2
+JOIN franchises AND dragrace WHERE acronym = franchise AND PRINT 6 name 2 name 1 year 1 host 2 season 1 winner 1
+#what
+QUIT

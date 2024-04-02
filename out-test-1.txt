@@ -1,0 +1,156 @@
+% % New table clubbers with column(s) name section points gradyear exec created
+% name points 
+Printed 0 matching rows from clubbers
+% Added 20 rows to clubbers from position 0 to 19
+% name section 
+reilly tenor1 
+kyle tenor1 
+derek tenor1 
+leo tenor1 
+al tenor1 
+brad tenor2 
+paul tenor2 
+jack tenor2 
+johnny tenor2 
+jared tenor2 
+arthur baritone 
+duncan baritone 
+joe baritone 
+nathan baritone 
+charlie baritone 
+nick bass 
+cole bass 
+denaly bass 
+kallen bass 
+oliver bass 
+Printed 20 matching rows from clubbers
+% name gradyear exec 
+reilly 2024 true 
+kyle 2024 true 
+al 2024 true 
+brad 2025 true 
+paul 2025 true 
+duncan 2025 true 
+joe 2024 true 
+nathan 2025 true 
+nick 2023 true 
+cole 2025 true 
+Printed 10 matching rows from clubbers
+% Deleted 3 rows from clubbers
+% points name section 
+673.2 brad tenor2 
+453.9 paul tenor2 
+452.8 jack tenor2 
+301.2 johnny tenor2 
+206.3 jared tenor2 
+Printed 5 matching rows from clubbers
+% Created bst index for table clubbers on column points, with 17 distinct keys
+% points name section 
+206.3 jared tenor2 
+230.1 oliver bass 
+237.5 kallen bass 
+301.2 johnny tenor2 
+314.8 nathan baritone 
+361.4 joe baritone 
+415 cole bass 
+452.8 jack tenor2 
+453.9 paul tenor2 
+465.3 al tenor1 
+479.6 duncan baritone 
+540.6 leo tenor1 
+622.8 derek tenor1 
+627.5 kyle tenor1 
+673.2 brad tenor2 
+890.8 reilly tenor1 
+1201.1 arthur baritone 
+Printed 17 matching rows from clubbers
+% name 
+reilly 
+kyle 
+derek 
+leo 
+al 
+brad 
+paul 
+jack 
+johnny 
+jared 
+arthur 
+duncan 
+joe 
+nathan 
+cole 
+kallen 
+oliver 
+Printed 17 matching rows from clubbers
+% name 
+johnny 
+nathan 
+joe 
+cole 
+jack 
+paul 
+al 
+duncan 
+leo 
+derek 
+kyle 
+brad 
+reilly 
+arthur 
+Printed 14 matching rows from clubbers
+% section name 
+tenor2 brad 
+tenor2 paul 
+tenor2 jack 
+tenor2 johnny 
+baritone duncan 
+baritone nathan 
+bass cole 
+Printed 7 matching rows from clubbers
+% Added 12 rows to clubbers from position 17 to 28
+% name points 
+gavin 100.1 
+alex 104.8 
+gabe 148.5 
+shashank 163.3 
+ben 169 
+erik 170.9 
+lars 177.4 
+carsten 189.8 
+jack 199.4 
+Printed 9 matching rows from clubbers
+% Created bst index for table clubbers on column name, with 28 distinct keys
+% name section 
+reilly tenor1 
+kyle tenor1 
+derek tenor1 
+leo tenor1 
+al tenor1 
+brad tenor2 
+paul tenor2 
+jack tenor2 
+johnny tenor2 
+jared tenor2 
+arthur baritone 
+duncan baritone 
+joe baritone 
+nathan baritone 
+cole bass 
+kallen bass 
+oliver bass 
+siku tenor1 
+major tenor1 
+brenton tenor1 
+carsten tenor2 
+lars tenor2 
+gabe tenor2 
+jack baritone 
+ben baritone 
+shashank baritone 
+erik bass 
+alex bass 
+gavin bass 
+Printed 29 matching rows from clubbers
+% Table clubbers removed
+% Thanks for being silly!

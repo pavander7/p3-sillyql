@@ -1,0 +1,51 @@
+# mens glee points list
+CREATE clubbers 5 string string double int bool name section points gradyear exec
+PRINT FROM clubbers 2 name points ALL
+INSERT INTO clubbers 20 ROWS
+reilly tenor1 890.8 2024 true
+kyle tenor1 627.5 2024 true
+derek tenor1 622.8 2024 false
+leo tenor1 540.6 2026 true
+al tenor1 465.3 2024 true
+brad tenor2 673.2 2025 true
+paul tenor2 453.9 2025 true
+jack tenor2 452.8 2025 false
+johnny tenor2 301.2 2025 false
+jared tenor2 206.3 2024 false
+arthur baritone 1201.1 2028 false
+duncan baritone 479.6 2025 true
+joe baritone 361.4 2024 true
+nathan baritone 314.8 2025 true
+charlie baritone 289.8 2023 false
+nick bass 682.6 2023 true
+cole bass 415.0 2025 true
+denaly bass 250.3 2023 false
+kallen bass 237.5 2026 false
+oliver bass 230.1 2024 false
+PRINT FROM clubbers 2 name section ALL
+PRINT FROM clubbers 3 name gradyear exec WHERE exec = true
+DELETE FROM clubbers WHERE gradyear < 2024
+PRINT FROM clubbers 3 points name section WHERE section = tenor2
+GENERATE FOR clubbers bst INDEX ON points
+PRINT FROM clubbers 3 points name section WHERE points > 200.0
+PRINT FROM clubbers 1 name ALL
+PRINT FROM clubbers 1 name WHERE points > 250.0
+PRINT FROM clubbers 2 section name WHERE gradyear = 2025
+INSERT INTO clubbers 12 ROWS
+siku tenor1 312.8 2026 true
+major tenor1 297.1 2024 false
+brenton tenor1 241.7 2024 false
+carsten tenor2 189.8 2024 false
+lars tenor2 177.4 2025 false
+gabe tenor2 148.5 2026 false
+jack baritone 199.4 2024 false
+ben baritone 169.0 2026 false
+shashank baritone 163.3 3 false
+erik bass 170.9 2025 false
+alex bass 104.8 2026 false
+gavin bass 100.1 2026 false
+PRINT FROM clubbers 2 name points WHERE points < 200.0
+GENERATE FOR clubbers bst INDEX ON name
+PRINT FROM clubbers 2 name section ALL
+REMOVE clubbers
+QUIT

@@ -12,13 +12,12 @@ TableEntry PRODUCE (string type);
 int main (int argc, char* argv[]) {
     // step one: setup
     unordered_map<string, Tab*> tables;
-    //unordered_map<string, Index*> indices;
     ios_base::sync_with_stdio(false);
-    cout.clear();
+    std::cout.clear();
     cin >> std::boolalpha;
-    cout << std::boolalpha;
+    std::cout << std::boolalpha;
 
-    //cout << "checkpoint 1: beginning \n";
+    //std::cout << "checkpoint 1: beginning \n";
 
     static struct option long_options[] = {
     {"help",        no_argument,        NULL,  'h'},
@@ -34,7 +33,7 @@ int main (int argc, char* argv[]) {
     while (c != -1) {
         switch(c) {
             case 'h' :
-                cout << "help message";
+                std::cout << "help message";
                 return 0;
                 break;
             case 'q' :
@@ -47,30 +46,37 @@ int main (int argc, char* argv[]) {
 
     // step two: loop
     string line;
-    cout << "% ";
+    std::cout << "% ";
     while (cin >> line) {
         char c = line[0];
         switch (c) {
             case 'C' : { //CREATE
                 string junk, tablename;
-                int N = 0;
+                size_t N = 0;
                 cin >> tablename >> N;
                 vector<string> types, names;
-                for (int q = 0; q < N; q++) {
+                types.reserve(N);
+                names.reserve(N);
+                for (size_t q = 0; q < N; q++) {
                     cin >> junk;
                     types.push_back(junk);
-                } for (int q = 0; q < N; q++) {
+                } for (size_t q = 0; q < N; q++) {
                     cin >> junk;
                     names.push_back(junk);
                 }
-                Tab* t = new Tab(tablename, types, names, quiet);
-                tables.emplace(tablename,t);
-                break;
+                if (tables.count(tablename) != 0) {
+                    std::cout << "Error during CREATE: Cannot create already existing table " << tablename << endl;
+                    break;
+                } else {
+                    Tab* t = new Tab(tablename, types, names, quiet);
+                    tables.emplace(tablename,t);
+                    break;
+                } break;
             } case 'Q': { //QUIT
                 for (auto & [ key, value ] : tables) {
                     delete value;
                 }
-                cout << "Thanks for being silly!" << endl;
+                std::cout << "Thanks for being silly!" << endl;
                 return 0;
                 break;
             } case '#': { //#COMMENT
@@ -80,45 +86,58 @@ int main (int argc, char* argv[]) {
             } case 'R': { //REMOVE
                 string junk, tablename;
                 cin >> tablename;
-                delete tables[tablename];
-                tables.erase(tablename);
-                cout << "Table " << tablename << " removed" << endl;
-                break;
+                if (tables.count(tablename) == 0) {
+                    std::cout << "Error during REMOVE: " << tablename << " does not name a table in the databade\n";
+                    break;
+                } else {
+                    delete tables[tablename];
+                    tables.erase(tablename);
+                    std::cout << "Table " << tablename << " removed" << endl;
+                    break;
+                } break;
             } case 'I': { //INSERT
                 string junk, tablename;
-                int N = 0;
+                size_t N = 0;
                 cin >> junk >> tablename >> N >> junk;
                 Tab* target = nullptr;
-                try {
-                    target = LOC(tables, tablename);
+                target = LOC(tables, tablename);
+                if (target == nullptr) {
+                    std::cout << "Error during INSERT: " << tablename << " does not name a table in the database\n";
+                    for (size_t n = 0; n < N; n++) {
+                        getline (cin, junk);
+                    }
+                    break;
                 }
-                catch (const exception& e) {
-                    cout << "Error during INSERT: " << e.what() << endl;
-                } 
                 target->insert(N);
                 break;
             } case 'P': { //PRINT
                 string junk, tablename;
-                int N = 0;
+                size_t N = 0;
                 cin >> junk >> tablename >> N;
                 vector<string> colnames;
                 Tab* target = nullptr;
-                try {
-                    target = LOC(tables, tablename);
-                } catch (const exception& e) {
-                    cout << "Error during PRINT: " << e.what() << endl;
+                target = LOC(tables, tablename);
+                if (target == nullptr) {
+                    std::cout << "Error during PRINT: " << tablename << " does not name a table in the database\n";
+                    getline (cin, junk);
                     break;
                 }
                 bool quiet = target->quiet;
-                for (size_t n = 0; n < size_t(N); n++) {
+                bool err = false;
+                for (size_t n = 0; n < N; n++) {
                     cin >> junk;
-                    try {target->findCol(junk);}
-                    catch (const exception& e) { 
-                        cout << "Error during PRINT: " << e.what() << endl;
+                    size_t w = target->findCol(junk);
+                    if (w == target->size()) { 
+                        std::cout << "Error during PRINT: " << junk << " does not name a column in " << target->name << endl;
+                        err = true;
+                        getline (cin, junk);
                         break;
                     }
                     colnames.push_back(junk);
-                }
+                } if (err) {
+                    //getline (cin, junk);
+                    break;
+                } 
                 cin >> junk;
                 size_t M = 0;
                 if (junk == "WHERE") {
@@ -126,9 +145,10 @@ int main (int argc, char* argv[]) {
                     char OP;
                     size_t col = 0;
                     cin >> colname >> OP;
-                    try {col = target->findCol(colname);}
-                    catch (const exception& e) { 
-                        cout << "Error during PRINT: " << e.what() << endl;
+                    col = target->findCol(colname);
+                    if (col == target->size()) { 
+                        std::cout << "Error during PRINT: " << colname << " does not name a column in " << target->name << endl;
+                        getline (cin, junk);
                         break;
                     }
                     string type = target->findType(col);
@@ -137,7 +157,7 @@ int main (int argc, char* argv[]) {
                 } else {
                     M = target->print(colnames, quiet);
                 }
-                cout << "Printed " << M << " matching rows from " << tablename << endl;
+                std::cout << "Printed " << M << " matching rows from " << tablename << endl;
                 break;
             } case 'D': { //DELETE
                 string junk, tablename, colname;
@@ -145,28 +165,21 @@ int main (int argc, char* argv[]) {
                 size_t col = 0;
                 cin >> junk >> tablename >> junk >> colname >> OP;
                 Tab* target = nullptr;
-                try {
-                    target = LOC(tables, tablename);
-                } catch (const exception& e) {
-                    cout << "Error during DELETE: " << e.what() << endl;
+                target = LOC(tables, tablename);
+                if (target == nullptr) {
+                    std::cout << "Error during DELETE: " << tablename << " does not name a table in the database\n";
                     break;
-                } try {
-                    col = target->findCol(colname);
-                } catch (const exception& e) {
-                    cout << "Error during DELETE: " << e.what() << endl;
+                }
+                col = target->findCol(colname);
+                if (col == target->size()) {
+                    std::cout << "Error during DELETE: " << colname << " does not name a column in " << target->name << endl;
                     break;
                 }
                 string type = target->findType(col);
                 ColComp comp(col, OP, PRODUCE(type), target);
-                //target->makeIndex(true, colname);
                 size_t M = 0;
-                try {
-                    M = target->sift(/*colname, */comp);
-                } catch (const exception& e) {
-                    cout << "Error during INSERT: " << e.what() << endl;
-                    break;
-                }
-                cout << "Deleted " << M << " rows from " << tablename << endl;
+                M = target->sift(comp);
+                std::cout << "Deleted " << M << " rows from " << tablename << endl;
                 break;
             } case 'J': { //JOIN
                 string junk, tablename1, tablename2, colname1, colname2;
@@ -180,72 +193,72 @@ int main (int argc, char* argv[]) {
                     >> junk >> junk >> N;
                 Tab* target1 = nullptr;
                 Tab* target2 = nullptr;
-                try {
-                    target1 = LOC(tables, tablename1);
-                } catch (const exception& e) {
-                    cout << "Error during JOIN: " << e.what() << endl;
+                target1 = LOC(tables, tablename1);
+                if (target1 == nullptr) {
+                    std::cout << "Error during JOIN: " << tablename1 << " does not name a table in the database\n";
+                    getline(cin,junk);
                     break;
-                } try {
-                    target2 = LOC(tables, tablename2);
-                } catch (const exception& e) {
-                    cout << "Error during JOIN: " << e.what() << endl;
+                } target2 = LOC(tables, tablename2);
+                if (target2 == nullptr) {
+                    std::cout << "Error during JOIN: " << tablename2 << " does not name a table in the database\n";
+                    getline(cin,junk);
                     break;
-                }
-                try {
-                    i_1 = target1->findCol(colname1);
-                } catch (const exception& e) {
-                    cout << "Error during JOIN: " << e.what() << endl;
+                } i_1 = target1->findCol(colname1);
+                if (i_1 == target1->size()) {
+                    std::cout << "Error during JOIN: " << colname1 << " does not name a column in " << target1->name << endl;
+                    getline(cin,junk);
                     break;
-                }
-                try {
-                    i_2 = target2->findCol(colname2);
-                } catch (const exception& e) {
-                    cout << "Error during JOIN: " << e.what() << endl;
+                } i_2 = target2->findCol(colname2);
+                if (i_2 == target2->size()) {
+                    std::cout << "Error during JOIN: " << colname2 << " does not name a column in " << target2->name << endl;
+                    getline(cin,junk);
                     break;
-                }
+                } bool err = false;
                 for (size_t c = 0; c < N; c++) {
                     string temp_name;
                     size_t temp_mode = 0;
                     cin >> temp_name >> temp_mode;
                     size_t temp_i = 0;
-                    try {
-                        if(temp_mode == 1) temp_i = target1->findCol(temp_name);
-                        else               temp_i = target2->findCol(temp_name);
-                    } catch (const exception& e) {
-                        cout << "Error during JOIN: " << e.what() << endl;
+                    if(temp_mode == 1) temp_i = target1->findCol(temp_name);
+                    else               temp_i = target2->findCol(temp_name);
+                    if ((temp_mode == 1)&&(temp_i == target1->size())) {
+                        std::cout << "Error during JOIN: " << temp_name << " does not name a column in " << target1->name << endl;
+                        getline(cin,junk);
+                        err = true;
+                        break;
+                    } else if ((temp_mode == 2)&&(temp_i == target2->size())) {
+                        std::cout << "Error during JOIN: " << temp_name << " does not name a column in " << target2->name << endl;
+                        getline(cin,junk);
+                        err = true;
                         break;
                     }
                     cols.push_back(temp_i);
                     modes.push_back((temp_mode == 2));
-                }
+                } if (err) break;
                 target1->join(target2, i_1, i_2, cols, modes, quiet);
                 break;
             } case 'G': { //GENERATE
                 string junk, tablename, indextype, colname;
                 cin >> junk >> tablename >> indextype >> junk >> junk >> colname;
                 Tab* target = nullptr;
-                try {
-                    target = LOC(tables, tablename);
-                } catch (const exception& e) {
-                    cout << "Error during GENERATE: " << e.what() << endl;
+                target = LOC(tables, tablename);
+                if (target == nullptr) {
+                    std::cout << "Error during GENERATE: " << tablename << " does not name a table in the database\n";
                     break;
                 }
                 size_t y = 0;
-                try {
-                    y = target->findCol(colname);
-                } catch (const exception& e) {
-                    cout << "Error during GENERATE: " << e.what() << endl;
+                y = target->findCol(colname);
+                if (y == target->size()) {
+                    std::cout << "Error during GENERATE: " << tablename << " does not name a table in the database\n";
                     break;
                 }
-                //target->makeIndex((indextype == "bst"), colname);
-                if (target->i == nullptr) {
-                    target->i = new Index((indextype == "bst"), y, target);
-                } else {
-                    target->i->reindex((indextype == "bst"), y, target);
-                } cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << target->i->size() << " distinct keys\n"; 
+                target->indexify((indextype == "bst"), y);
+                std::cout << "Created " << indextype << " index for table " << tablename << " on column " << colname << ", with " << target->i->size() << " distinct keys\n"; 
                 break;
             } default: { //Error: unrecognized command
-                cout << "Error: unrecognized command" << ": \"" << line << "\"" << endl;
+                std::cout << "Error: unrecognized command" << ": \"" << line << "\"" << endl;
+                string junk;
+                getline (cin, junk);
                 break;
             }
         }
