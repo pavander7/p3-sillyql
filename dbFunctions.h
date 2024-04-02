@@ -19,8 +19,8 @@ public:
     Tab &operator= (const Tab& rhs);
 
     void insert(std::size_t N);
-    std::size_t print(std::vector<std::string> cols, bool quiet);
-    std::size_t print(std::vector<std::string> cols, bool quiet, ColComp comp);
+    void print(std::vector<std::string> cols);
+    std::size_t print(std::vector<std::string> &cols, bool quiet, std::size_t col, char OP, TableEntry val);
     std::size_t sift(/*std::string col,*/ ColComp comp);
     void join(Tab* other, std::size_t col1, std::size_t col2, 
         std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet);
@@ -31,6 +31,7 @@ public:
     bool quiet;
     std::size_t findCol (const std::string colname);
     std::string findType (const std::size_t col) {return types[col];}
+    std::size_t width () {return types.size();}
     std::size_t size () {return data.size();}
 
     friend class ColComp;
@@ -51,6 +52,8 @@ public:
     bool operator() (std::vector<TableEntry>* ptr);
 
     std::size_t col;
+    
+    friend class Tab;
 
 private:
     TableEntry val;
@@ -68,6 +71,13 @@ public:
     } void emplace (std::vector<TableEntry>* elt);
     void erase (TableEntry key, std::vector<TableEntry>* elt);
     void reindex(bool order_in, std::size_t col, Tab* target);
+    std::vector<std::vector<TableEntry>*> &operator() (TableEntry elt) {
+        if (order) return o[elt];
+        else return u[elt];
+    } std::size_t count (TableEntry elt) {
+        if (order) return o.count(elt);
+        else return u.count(elt);
+    }
 
     friend class Tab;
 

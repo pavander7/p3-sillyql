@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/silly_valgrind",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "stdio": ["test-3.txt","out-test-3.txt"]
+            "stdio": ["spec-input.txt","my-spec-output.txt"]
         }
     ]
 }

@@ -1,0 +1,1028 @@
+% New table dragrace with column(s) franchise country allstars ru season contestants episodes year winner created
+% Added 59 rows to dragrace from position 0 to 58
+% franchise season episodes 
+rpdr 1 9 
+rpdr 2 12 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 8 10 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+drt 1 8 
+drt 2 13 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+dri 3 12 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 59 matching rows from dragrace
+% franchise season episodes 
+rpdr 1 9 
+rpdr 8 10 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+drt 1 8 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 38 matching rows from dragrace
+% franchise season episodes 
+rpdr 2 12 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+dri 3 12 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+Printed 8 matching rows from dragrace
+% franchise season episodes 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+drt 2 13 
+Printed 13 matching rows from dragrace
+% franchise season episodes 
+Printed 0 matching rows from dragrace
+% franchise season episodes 
+Printed 0 matching rows from dragrace
+% franchise season episodes 
+Printed 0 matching rows from dragrace
+% franchise season episodes franchise season episodes 
+rpdr 1 9 rpdr 9 14 
+rpdr 2 12 rpdr 12 14 
+rpdr 4 14 rpdr 14 16 
+rpdr 5 14 rpdr 14 16 
+rpdr 6 14 rpdr 14 16 
+rpdr 7 14 rpdr 14 16 
+rpdr 8 10 rpdr 10 14 
+rpdr 9 14 rpdr 14 16 
+rpdr 10 14 rpdr 14 16 
+rpdr 11 14 rpdr 14 16 
+rpdr 12 14 rpdr 14 16 
+rpdras 1 6 rpdr 6 14 
+rpdras 1 6 rpdras 6 12 
+rpdras 2 9 rpdr 9 14 
+rpdras 3 8 rpdr 8 10 
+rpdras 3 8 rpdras 8 12 
+rpdras 4 10 rpdr 10 14 
+rpdras 5 8 rpdr 8 10 
+rpdras 5 8 rpdras 8 12 
+rpdras 6 12 rpdr 12 14 
+rpdras 7 12 rpdr 12 14 
+rpdras 8 12 rpdr 12 14 
+drt 1 8 rpdr 8 10 
+drt 1 8 rpdras 8 12 
+drt 2 13 rpdr 13 16 
+rpdruk 1 8 rpdr 8 10 
+rpdruk 1 8 rpdras 8 12 
+rpdruk 2 10 rpdr 10 14 
+rpdruk 3 10 rpdr 10 14 
+rpdruk 4 10 rpdr 10 14 
+rpdruk 5 10 rpdr 10 14 
+cdr 1 10 rpdr 10 14 
+cdr 2 10 rpdr 10 14 
+cdr 3 9 rpdr 9 14 
+cdr 4 9 rpdr 9 14 
+drh 1 8 rpdr 8 10 
+drh 1 8 rpdras 8 12 
+drh 2 8 rpdr 8 10 
+drh 2 8 rpdras 8 12 
+drdu 1 8 rpdr 8 10 
+drdu 1 8 rpdras 8 12 
+drdu 2 8 rpdr 8 10 
+drdu 2 8 rpdras 8 12 
+drdu 3 8 rpdr 8 10 
+drdu 3 8 rpdras 8 12 
+dre 1 9 rpdr 9 14 
+dre 2 11 rpdr 11 14 
+dre 3 11 rpdr 11 14 
+dri 1 6 rpdr 6 14 
+dri 1 6 rpdras 6 12 
+dri 2 8 rpdr 8 10 
+dri 2 8 rpdras 8 12 
+dri 3 12 rpdr 12 14 
+drf 1 8 rpdr 8 10 
+drf 1 8 rpdras 8 12 
+drf 2 9 rpdr 9 14 
+drp 1 10 rpdr 10 14 
+drp 2 10 rpdr 10 14 
+drbe 1 8 rpdr 8 10 
+drbe 1 8 rpdras 8 12 
+drbe 2 8 rpdr 8 10 
+drbe 2 8 rpdras 8 12 
+drs 1 8 rpdr 8 10 
+drs 1 8 rpdras 8 12 
+drm 1 12 rpdr 12 14 
+drbs 1 12 rpdr 12 14 
+drg 1 12 rpdr 12 14 
+rpdrukvtw 1 6 rpdr 6 14 
+rpdrukvtw 1 6 rpdras 6 12 
+rpdrukvtw 2 8 rpdr 8 10 
+rpdrukvtw 2 8 rpdras 8 12 
+cdrcvtw 1 6 rpdr 6 14 
+cdrcvtw 1 6 rpdras 6 12 
+dreas 1 7 rpdr 7 14 
+dreas 1 7 rpdras 7 12 
+Printed 75 rows from joining dragrace to dragrace
+% Created hash index for table dragrace on column winner, with 57 distinct keys
+% franchise season episodes 
+rpdr 1 9 
+rpdr 2 12 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 8 10 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+drt 1 8 
+drt 2 13 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+dri 3 12 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 59 matching rows from dragrace
+% franchise season episodes 
+rpdr 1 9 
+rpdr 8 10 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+drt 1 8 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 38 matching rows from dragrace
+% franchise season episodes 
+rpdr 2 12 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+dri 3 12 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+Printed 8 matching rows from dragrace
+% franchise season episodes 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+drt 2 13 
+Printed 13 matching rows from dragrace
+% franchise season episodes franchise season episodes 
+rpdr 1 9 rpdr 9 14 
+rpdr 2 12 rpdr 12 14 
+rpdr 4 14 rpdr 14 16 
+rpdr 5 14 rpdr 14 16 
+rpdr 6 14 rpdr 14 16 
+rpdr 7 14 rpdr 14 16 
+rpdr 8 10 rpdr 10 14 
+rpdr 9 14 rpdr 14 16 
+rpdr 10 14 rpdr 14 16 
+rpdr 11 14 rpdr 14 16 
+rpdr 12 14 rpdr 14 16 
+rpdras 1 6 rpdr 6 14 
+rpdras 1 6 rpdras 6 12 
+rpdras 2 9 rpdr 9 14 
+rpdras 3 8 rpdr 8 10 
+rpdras 3 8 rpdras 8 12 
+rpdras 4 10 rpdr 10 14 
+rpdras 5 8 rpdr 8 10 
+rpdras 5 8 rpdras 8 12 
+rpdras 6 12 rpdr 12 14 
+rpdras 7 12 rpdr 12 14 
+rpdras 8 12 rpdr 12 14 
+drt 1 8 rpdr 8 10 
+drt 1 8 rpdras 8 12 
+drt 2 13 rpdr 13 16 
+rpdruk 1 8 rpdr 8 10 
+rpdruk 1 8 rpdras 8 12 
+rpdruk 2 10 rpdr 10 14 
+rpdruk 3 10 rpdr 10 14 
+rpdruk 4 10 rpdr 10 14 
+rpdruk 5 10 rpdr 10 14 
+cdr 1 10 rpdr 10 14 
+cdr 2 10 rpdr 10 14 
+cdr 3 9 rpdr 9 14 
+cdr 4 9 rpdr 9 14 
+drh 1 8 rpdr 8 10 
+drh 1 8 rpdras 8 12 
+drh 2 8 rpdr 8 10 
+drh 2 8 rpdras 8 12 
+drdu 1 8 rpdr 8 10 
+drdu 1 8 rpdras 8 12 
+drdu 2 8 rpdr 8 10 
+drdu 2 8 rpdras 8 12 
+drdu 3 8 rpdr 8 10 
+drdu 3 8 rpdras 8 12 
+dre 1 9 rpdr 9 14 
+dre 2 11 rpdr 11 14 
+dre 3 11 rpdr 11 14 
+dri 1 6 rpdr 6 14 
+dri 1 6 rpdras 6 12 
+dri 2 8 rpdr 8 10 
+dri 2 8 rpdras 8 12 
+dri 3 12 rpdr 12 14 
+drf 1 8 rpdr 8 10 
+drf 1 8 rpdras 8 12 
+drf 2 9 rpdr 9 14 
+drp 1 10 rpdr 10 14 
+drp 2 10 rpdr 10 14 
+drbe 1 8 rpdr 8 10 
+drbe 1 8 rpdras 8 12 
+drbe 2 8 rpdr 8 10 
+drbe 2 8 rpdras 8 12 
+drs 1 8 rpdr 8 10 
+drs 1 8 rpdras 8 12 
+drm 1 12 rpdr 12 14 
+drbs 1 12 rpdr 12 14 
+drg 1 12 rpdr 12 14 
+rpdrukvtw 1 6 rpdr 6 14 
+rpdrukvtw 1 6 rpdras 6 12 
+rpdrukvtw 2 8 rpdr 8 10 
+rpdrukvtw 2 8 rpdras 8 12 
+cdrcvtw 1 6 rpdr 6 14 
+cdrcvtw 1 6 rpdras 6 12 
+dreas 1 7 rpdr 7 14 
+dreas 1 7 rpdras 7 12 
+Printed 75 rows from joining dragrace to dragrace
+% Created bst index for table dragrace on column winner, with 57 distinct keys
+% franchise season episodes 
+rpdr 1 9 
+rpdr 2 12 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 8 10 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+drt 1 8 
+drt 2 13 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+dri 3 12 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 59 matching rows from dragrace
+% franchise season episodes 
+rpdr 1 9 
+rpdr 8 10 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+drt 1 8 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 38 matching rows from dragrace
+% franchise season episodes 
+rpdr 2 12 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+dri 3 12 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+Printed 8 matching rows from dragrace
+% franchise season episodes 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+drt 2 13 
+Printed 13 matching rows from dragrace
+% franchise season episodes franchise season episodes 
+rpdr 1 9 rpdr 9 14 
+rpdr 2 12 rpdr 12 14 
+rpdr 4 14 rpdr 14 16 
+rpdr 5 14 rpdr 14 16 
+rpdr 6 14 rpdr 14 16 
+rpdr 7 14 rpdr 14 16 
+rpdr 8 10 rpdr 10 14 
+rpdr 9 14 rpdr 14 16 
+rpdr 10 14 rpdr 14 16 
+rpdr 11 14 rpdr 14 16 
+rpdr 12 14 rpdr 14 16 
+rpdras 1 6 rpdr 6 14 
+rpdras 1 6 rpdras 6 12 
+rpdras 2 9 rpdr 9 14 
+rpdras 3 8 rpdr 8 10 
+rpdras 3 8 rpdras 8 12 
+rpdras 4 10 rpdr 10 14 
+rpdras 5 8 rpdr 8 10 
+rpdras 5 8 rpdras 8 12 
+rpdras 6 12 rpdr 12 14 
+rpdras 7 12 rpdr 12 14 
+rpdras 8 12 rpdr 12 14 
+drt 1 8 rpdr 8 10 
+drt 1 8 rpdras 8 12 
+drt 2 13 rpdr 13 16 
+rpdruk 1 8 rpdr 8 10 
+rpdruk 1 8 rpdras 8 12 
+rpdruk 2 10 rpdr 10 14 
+rpdruk 3 10 rpdr 10 14 
+rpdruk 4 10 rpdr 10 14 
+rpdruk 5 10 rpdr 10 14 
+cdr 1 10 rpdr 10 14 
+cdr 2 10 rpdr 10 14 
+cdr 3 9 rpdr 9 14 
+cdr 4 9 rpdr 9 14 
+drh 1 8 rpdr 8 10 
+drh 1 8 rpdras 8 12 
+drh 2 8 rpdr 8 10 
+drh 2 8 rpdras 8 12 
+drdu 1 8 rpdr 8 10 
+drdu 1 8 rpdras 8 12 
+drdu 2 8 rpdr 8 10 
+drdu 2 8 rpdras 8 12 
+drdu 3 8 rpdr 8 10 
+drdu 3 8 rpdras 8 12 
+dre 1 9 rpdr 9 14 
+dre 2 11 rpdr 11 14 
+dre 3 11 rpdr 11 14 
+dri 1 6 rpdr 6 14 
+dri 1 6 rpdras 6 12 
+dri 2 8 rpdr 8 10 
+dri 2 8 rpdras 8 12 
+dri 3 12 rpdr 12 14 
+drf 1 8 rpdr 8 10 
+drf 1 8 rpdras 8 12 
+drf 2 9 rpdr 9 14 
+drp 1 10 rpdr 10 14 
+drp 2 10 rpdr 10 14 
+drbe 1 8 rpdr 8 10 
+drbe 1 8 rpdras 8 12 
+drbe 2 8 rpdr 8 10 
+drbe 2 8 rpdras 8 12 
+drs 1 8 rpdr 8 10 
+drs 1 8 rpdras 8 12 
+drm 1 12 rpdr 12 14 
+drbs 1 12 rpdr 12 14 
+drg 1 12 rpdr 12 14 
+rpdrukvtw 1 6 rpdr 6 14 
+rpdrukvtw 1 6 rpdras 6 12 
+rpdrukvtw 2 8 rpdr 8 10 
+rpdrukvtw 2 8 rpdras 8 12 
+cdrcvtw 1 6 rpdr 6 14 
+cdrcvtw 1 6 rpdras 6 12 
+dreas 1 7 rpdr 7 14 
+dreas 1 7 rpdras 7 12 
+Printed 75 rows from joining dragrace to dragrace
+% Created hash index for table dragrace on column episodes, with 10 distinct keys
+% franchise season episodes 
+rpdr 1 9 
+rpdr 2 12 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 8 10 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+drt 1 8 
+drt 2 13 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+dri 3 12 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 59 matching rows from dragrace
+% franchise season episodes 
+rpdr 1 9 
+rpdr 8 10 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+drt 1 8 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 38 matching rows from dragrace
+% franchise season episodes 
+rpdr 2 12 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+dri 3 12 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+Printed 8 matching rows from dragrace
+% franchise season episodes 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+drt 2 13 
+Printed 13 matching rows from dragrace
+% franchise season episodes franchise season episodes 
+rpdr 1 9 rpdr 9 14 
+rpdr 2 12 rpdr 12 14 
+rpdr 4 14 rpdr 14 16 
+rpdr 5 14 rpdr 14 16 
+rpdr 6 14 rpdr 14 16 
+rpdr 7 14 rpdr 14 16 
+rpdr 8 10 rpdr 10 14 
+rpdr 9 14 rpdr 14 16 
+rpdr 10 14 rpdr 14 16 
+rpdr 11 14 rpdr 14 16 
+rpdr 12 14 rpdr 14 16 
+rpdras 1 6 rpdr 6 14 
+rpdras 1 6 rpdras 6 12 
+rpdras 2 9 rpdr 9 14 
+rpdras 3 8 rpdr 8 10 
+rpdras 3 8 rpdras 8 12 
+rpdras 4 10 rpdr 10 14 
+rpdras 5 8 rpdr 8 10 
+rpdras 5 8 rpdras 8 12 
+rpdras 6 12 rpdr 12 14 
+rpdras 7 12 rpdr 12 14 
+rpdras 8 12 rpdr 12 14 
+drt 1 8 rpdr 8 10 
+drt 1 8 rpdras 8 12 
+drt 2 13 rpdr 13 16 
+rpdruk 1 8 rpdr 8 10 
+rpdruk 1 8 rpdras 8 12 
+rpdruk 2 10 rpdr 10 14 
+rpdruk 3 10 rpdr 10 14 
+rpdruk 4 10 rpdr 10 14 
+rpdruk 5 10 rpdr 10 14 
+cdr 1 10 rpdr 10 14 
+cdr 2 10 rpdr 10 14 
+cdr 3 9 rpdr 9 14 
+cdr 4 9 rpdr 9 14 
+drh 1 8 rpdr 8 10 
+drh 1 8 rpdras 8 12 
+drh 2 8 rpdr 8 10 
+drh 2 8 rpdras 8 12 
+drdu 1 8 rpdr 8 10 
+drdu 1 8 rpdras 8 12 
+drdu 2 8 rpdr 8 10 
+drdu 2 8 rpdras 8 12 
+drdu 3 8 rpdr 8 10 
+drdu 3 8 rpdras 8 12 
+dre 1 9 rpdr 9 14 
+dre 2 11 rpdr 11 14 
+dre 3 11 rpdr 11 14 
+dri 1 6 rpdr 6 14 
+dri 1 6 rpdras 6 12 
+dri 2 8 rpdr 8 10 
+dri 2 8 rpdras 8 12 
+dri 3 12 rpdr 12 14 
+drf 1 8 rpdr 8 10 
+drf 1 8 rpdras 8 12 
+drf 2 9 rpdr 9 14 
+drp 1 10 rpdr 10 14 
+drp 2 10 rpdr 10 14 
+drbe 1 8 rpdr 8 10 
+drbe 1 8 rpdras 8 12 
+drbe 2 8 rpdr 8 10 
+drbe 2 8 rpdras 8 12 
+drs 1 8 rpdr 8 10 
+drs 1 8 rpdras 8 12 
+drm 1 12 rpdr 12 14 
+drbs 1 12 rpdr 12 14 
+drg 1 12 rpdr 12 14 
+rpdrukvtw 1 6 rpdr 6 14 
+rpdrukvtw 1 6 rpdras 6 12 
+rpdrukvtw 2 8 rpdr 8 10 
+rpdrukvtw 2 8 rpdras 8 12 
+cdrcvtw 1 6 rpdr 6 14 
+cdrcvtw 1 6 rpdras 6 12 
+dreas 1 7 rpdr 7 14 
+dreas 1 7 rpdras 7 12 
+Printed 75 rows from joining dragrace to dragrace
+% Created bst index for table dragrace on column episodes, with 10 distinct keys
+% franchise season episodes 
+rpdr 1 9 
+rpdr 2 12 
+rpdr 3 16 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 8 10 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+rpdras 1 6 
+rpdras 2 9 
+rpdras 3 8 
+rpdras 4 10 
+rpdras 5 8 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+drt 1 8 
+drt 2 13 
+rpdruk 1 8 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+cdr 3 9 
+cdr 4 9 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dre 1 9 
+dre 2 11 
+dre 3 11 
+dri 1 6 
+dri 2 8 
+dri 3 12 
+drf 1 8 
+drf 2 9 
+drp 1 10 
+drp 2 10 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+rpdrukvtw 1 6 
+rpdrukvtw 2 8 
+cdrcvtw 1 6 
+dreas 1 7 
+Printed 59 matching rows from dragrace
+% franchise season episodes 
+rpdras 1 6 
+dri 1 6 
+rpdrukvtw 1 6 
+cdrcvtw 1 6 
+dreas 1 7 
+rpdras 3 8 
+rpdras 5 8 
+drt 1 8 
+rpdruk 1 8 
+drh 1 8 
+drh 2 8 
+drdu 1 8 
+drdu 2 8 
+drdu 3 8 
+dri 2 8 
+drf 1 8 
+drbe 1 8 
+drbe 2 8 
+drs 1 8 
+rpdrukvtw 2 8 
+rpdr 1 9 
+rpdras 2 9 
+cdr 3 9 
+cdr 4 9 
+dre 1 9 
+drf 2 9 
+rpdr 8 10 
+rpdras 4 10 
+rpdruk 2 10 
+rpdruk 3 10 
+rpdruk 4 10 
+rpdruk 5 10 
+cdr 1 10 
+cdr 2 10 
+drp 1 10 
+drp 2 10 
+dre 2 11 
+dre 3 11 
+Printed 38 matching rows from dragrace
+% franchise season episodes 
+rpdr 2 12 
+rpdras 6 12 
+rpdras 7 12 
+rpdras 8 12 
+dri 3 12 
+drm 1 12 
+drbs 1 12 
+drg 1 12 
+Printed 8 matching rows from dragrace
+% franchise season episodes 
+drt 2 13 
+rpdr 4 14 
+rpdr 5 14 
+rpdr 6 14 
+rpdr 7 14 
+rpdr 9 14 
+rpdr 10 14 
+rpdr 11 14 
+rpdr 12 14 
+rpdr 3 16 
+rpdr 13 16 
+rpdr 14 16 
+rpdr 15 16 
+Printed 13 matching rows from dragrace
+% franchise season episodes franchise season episodes 
+rpdras 1 6 rpdr 6 14 
+rpdras 1 6 rpdras 6 12 
+dri 1 6 rpdr 6 14 
+dri 1 6 rpdras 6 12 
+rpdrukvtw 1 6 rpdr 6 14 
+rpdrukvtw 1 6 rpdras 6 12 
+cdrcvtw 1 6 rpdr 6 14 
+cdrcvtw 1 6 rpdras 6 12 
+dreas 1 7 rpdr 7 14 
+dreas 1 7 rpdras 7 12 
+rpdras 3 8 rpdr 8 10 
+rpdras 3 8 rpdras 8 12 
+rpdras 5 8 rpdr 8 10 
+rpdras 5 8 rpdras 8 12 
+drt 1 8 rpdr 8 10 
+drt 1 8 rpdras 8 12 
+rpdruk 1 8 rpdr 8 10 
+rpdruk 1 8 rpdras 8 12 
+drh 1 8 rpdr 8 10 
+drh 1 8 rpdras 8 12 
+drh 2 8 rpdr 8 10 
+drh 2 8 rpdras 8 12 
+drdu 1 8 rpdr 8 10 
+drdu 1 8 rpdras 8 12 
+drdu 2 8 rpdr 8 10 
+drdu 2 8 rpdras 8 12 
+drdu 3 8 rpdr 8 10 
+drdu 3 8 rpdras 8 12 
+dri 2 8 rpdr 8 10 
+dri 2 8 rpdras 8 12 
+drf 1 8 rpdr 8 10 
+drf 1 8 rpdras 8 12 
+drbe 1 8 rpdr 8 10 
+drbe 1 8 rpdras 8 12 
+drbe 2 8 rpdr 8 10 
+drbe 2 8 rpdras 8 12 
+drs 1 8 rpdr 8 10 
+drs 1 8 rpdras 8 12 
+rpdrukvtw 2 8 rpdr 8 10 
+rpdrukvtw 2 8 rpdras 8 12 
+rpdr 1 9 rpdr 9 14 
+rpdras 2 9 rpdr 9 14 
+cdr 3 9 rpdr 9 14 
+cdr 4 9 rpdr 9 14 
+dre 1 9 rpdr 9 14 
+drf 2 9 rpdr 9 14 
+rpdr 8 10 rpdr 10 14 
+rpdras 4 10 rpdr 10 14 
+rpdruk 2 10 rpdr 10 14 
+rpdruk 3 10 rpdr 10 14 
+rpdruk 4 10 rpdr 10 14 
+rpdruk 5 10 rpdr 10 14 
+cdr 1 10 rpdr 10 14 
+cdr 2 10 rpdr 10 14 
+drp 1 10 rpdr 10 14 
+drp 2 10 rpdr 10 14 
+dre 2 11 rpdr 11 14 
+dre 3 11 rpdr 11 14 
+rpdr 2 12 rpdr 12 14 
+rpdras 6 12 rpdr 12 14 
+rpdras 7 12 rpdr 12 14 
+rpdras 8 12 rpdr 12 14 
+dri 3 12 rpdr 12 14 
+drm 1 12 rpdr 12 14 
+drbs 1 12 rpdr 12 14 
+drg 1 12 rpdr 12 14 
+drt 2 13 rpdr 13 16 
+rpdr 4 14 rpdr 14 16 
+rpdr 5 14 rpdr 14 16 
+rpdr 6 14 rpdr 14 16 
+rpdr 7 14 rpdr 14 16 
+rpdr 9 14 rpdr 14 16 
+rpdr 10 14 rpdr 14 16 
+rpdr 11 14 rpdr 14 16 
+rpdr 12 14 rpdr 14 16 
+Printed 75 rows from joining dragrace to dragrace
+% Thanks for being silly!

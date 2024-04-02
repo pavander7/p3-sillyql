@@ -87,10 +87,9 @@ void Tab::insert(size_t N) {
     } size_t endN = data.size() - size_t(1);
     std::cout << "Added " << N << " rows to " << name << " from position " << startN << " to " << endN << endl;
 }
-size_t Tab::print(vector<std::string> cols, bool quiet) {
+void Tab::print(vector<std::string> cols) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
-    size_t M = 0;
     for (auto mother : cols) {
         if(!quiet) std::cout << mother << " ";
         for(size_t q = 0; q < names.size(); q++) {
@@ -104,10 +103,9 @@ size_t Tab::print(vector<std::string> cols, bool quiet) {
         for (size_t him : iCols) {
             if (!quiet) std::cout << rupaul->at(him) << " ";
         } if (!quiet) std::cout << endl;
-        M++;
-    } return M;
+    }
 }
-size_t Tab::print(vector<std::string> cols, bool quiet, ColComp comp) {
+size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, TableEntry val) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
     size_t M = 0;
@@ -120,21 +118,70 @@ size_t Tab::print(vector<std::string> cols, bool quiet, ColComp comp) {
             }
         }
     } if(!quiet) std::cout << endl;
-    if (this->i != nullptr && this->i->order && (i->col == comp.col)) {
-        if (this->i->size() == 0) return 0;
-        //map<TableEntry, vector<TableEntry>*>::iterator it;
-        //for(it = this->i->o.begin(); it != this->i->o.end(); it++) {
-        for(auto & [ key, elt ] : this->i->o) { //copy constructing here (bad)
-            for (auto row : elt) {
-                if (comp(row)) {
-                    for (size_t him : iCols) {
-                        if (!quiet) std::cout << row->at(him) << " ";
-                    } if (!quiet) std::cout << endl;
-                    M++;
+    if (data.size() == 0) return 0;
+    else if (this->i != nullptr && this->i->order && (i->col == col)) {
+        if ((OP == '<') && (i->o.lower_bound(val) == i->o.end())) return 0;
+        else if ((OP == '>') && (i->o.upper_bound(val) == i->o.end())) return 0;
+        else if (OP == '=') {
+            if (i->count(val) != 0) {
+                vector<vector<TableEntry>*> storage = (*i)(val);
+                M = storage.size();
+                if (!quiet) {
+                    for (auto &bucket : i->o) {
+                        auto row = &(bucket.second);
+                        for (size_t him : iCols) {
+                            if (!quiet) std::cout << row->at(him) << " ";
+                        } if (!quiet) std::cout << endl;
+                    }
+                }
+            } return M;
+        }
+        ColComp comp(col, OP, val, this);
+        if (OP == '<') {
+            map<TableEntry, vector<vector<TableEntry>*>> sieve(i->o.begin(), i->o.lower_bound(val));
+            for(auto &  bucket : sieve) { //copy constructing here (bad)
+                auto &storage = bucket.second;
+                M += storage.size();
+                if (!quiet) {
+                    for (auto row : storage) {
+                        for (size_t him : iCols) {
+                            if (!quiet) std::cout << row->at(him) << " ";
+                        } if (!quiet) std::cout << endl;
+                    }
+                }
+            }
+        }
+        else {
+            map<TableEntry, vector<vector<TableEntry>*>> sieve(i->o.upper_bound(val), i->o.end());
+            for(auto &  bucket : sieve) { //copy constructing here (bad)
+                auto &storage = bucket.second;
+                M += storage.size();
+                if (!quiet) {
+                    for (auto row : storage) {
+                        for (size_t him : iCols) {
+                            if (!quiet) std::cout << row->at(him) << " ";
+                        } if (!quiet) std::cout << endl;
+                    }
                 }
             }
         }
     } else {
+        if (OP == '=') {
+            Index sieve(false, col, this);
+            if (sieve.count(val) != 0) {
+                vector<vector<TableEntry>*> storage = sieve(val);
+                M = storage.size();
+                if (!quiet) {
+                    for (auto &bucket : sieve.u) {
+                        auto row = &(bucket.second);
+                        for (size_t him : iCols) {
+                            if (!quiet) std::cout << row->at(him) << " ";
+                        } if (!quiet) std::cout << endl;
+                    }
+                }
+            } return M;
+        }
+        ColComp comp(col, OP, val, this);
         for(vector<TableEntry>* rupaul : data) {
             if (comp(rupaul)) {
                 for (size_t him : iCols) {
@@ -153,7 +200,7 @@ size_t Tab::findCol (string colname) {
             return col;
         }
     }
-    return data.size();
+    return width();
 }
 vector<TableEntry>* Tab::rowify(std::vector<std::string> &types) {
     vector<TableEntry>* row = new vector<TableEntry>;
@@ -165,7 +212,7 @@ vector<TableEntry>* Tab::rowify(std::vector<std::string> &types) {
 size_t Tab::sift(ColComp comp) {
     size_t N = 0;
     vector<vector<TableEntry>*> temp;
-    /*Index sieve(false, comp.col, this);
+    Index sieve(false, comp.col, this);
     for (auto & bucket : sieve.o) {
         auto directory = bucket.second;
         if (comp(directory[0])) {
@@ -175,7 +222,7 @@ size_t Tab::sift(ColComp comp) {
                 N++;
             }
         }
-    } */
+    }
     for (auto & elt : data) {
         if (comp(elt)) {
             if (i != nullptr) i->erase((elt)->at(i->col), elt);
@@ -191,6 +238,7 @@ size_t Tab::sift(ColComp comp) {
 void Tab::join (Tab* other, std::size_t col1, std::size_t col2, 
     std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet) {
     size_t M = 0;
+    Index twoSieve(false, col2, other);
     if (!quiet) {
         for (size_t f = 0; f < cols.size(); f++) {
             string temp;
@@ -200,19 +248,19 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
             std::cout << temp << ' ';
         } std::cout << endl;
     } if (i != nullptr && i->order && (i->col == col1)) {
-        for (auto pear : i->o) {
-            auto mother = pear.second;
+        for (auto &pear : i->o) {
+            auto &mother = pear.second;
             for (auto her : mother) {
-                ColComp comp(col2, '=', her->at(col1), other);
-                for (size_t y = 0; y < other->data.size(); y++) {
-                    vector<TableEntry>* him = other->data[y];
-                    if (comp(him)) {
-                        M++;
-                        if (!quiet) {
+                TableEntry val = her->at(col1);
+                if (twoSieve.count(val) != 0) {
+                    vector<vector<TableEntry>*> storage = twoSieve(val);
+                    M += storage.size();
+                    if (!quiet) {
+                        for (auto row : storage) {
                             for (size_t f = 0; f < cols.size(); f++) {
                                 size_t u = cols[f];
                                 if (!modes[f]) std::cout << her->at(u) << ' ';
-                                else std::cout << him->at(u) << ' ';
+                                else std::cout << row->at(u) << ' ';
                             } std::cout << endl;
                         }
                     }
@@ -221,16 +269,16 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
         }
     } else {
         for (vector<TableEntry>* her : data) {
-            ColComp comp(col2, '=', her->at(col1), other);
-            for (size_t y = 0; y < other->data.size(); y++) {
-                vector<TableEntry>* him = other->data[y];
-                if (comp(him)) {
-                    M++;
-                    if (!quiet) {
+            TableEntry val = her->at(col1);
+            if (twoSieve.count(val) != 0) {
+                vector<vector<TableEntry>*> &storage = twoSieve(val);
+                M += storage.size();
+                if (!quiet) {
+                    for (auto &row : storage) {
                         for (size_t f = 0; f < cols.size(); f++) {
                             size_t u = cols[f];
                             if (!modes[f]) std::cout << her->at(u) << ' ';
-                            else std::cout << him->at(u) << ' ';
+                            else std::cout << row->at(u) << ' ';
                         } std::cout << endl;
                     }
                 }
