@@ -1,0 +1,1084 @@
+% New table dragrace with column(s) franchise country allstars ru season contestants episodes year winner created
+% Added 59 rows to dragrace from position 0 to 58
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdr 8 BobTheDragQueen 
+rpdr 10 Aquaria 
+rpdr 12 JaidaEssenceHall 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 8 Jimbo 
+drt 2 AngeleAnang 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+drh 1 EnvyPeru 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dri 1 ElecktraBionic 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+rpdrukvtw 1 BluHydrangea 
+dreas 1 DragSethlas 
+Printed 24 matching rows from dragrace
+% franchise season winner 
+rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon 
+Printed 2 matching rows from dragrace
+% franchise season winner 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 7 VioletChachki 
+rpdr 9 SashaVelour 
+rpdr 11 YvieOddly 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+drt 1 NataliaPliacam 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+cdr 1 Priyanka 
+cdr 4 Venus 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+Printed 33 matching rows from dragrace
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+Printed 0 matching rows from dragrace
+% franchise season winner 
+Printed 0 matching rows from dragrace
+% franchise season winner franchise season winner 
+rpdr 1 BeBeZaharaBenet rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez rpdr 2 TyraSanchez 
+rpdr 3 Raja rpdr 3 Raja 
+rpdr 4 SharonNeedles rpdr 4 SharonNeedles 
+rpdr 4 SharonNeedles dre 2 SharonNeedles 
+rpdr 5 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdr 5 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdr 6 BiancaDelRio rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour rpdr 9 SashaVelour 
+rpdr 10 Aquaria rpdr 10 Aquaria 
+rpdr 11 YvieOddly rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone rpdr 13 Symone 
+rpdr 14 WillowPill rpdr 14 WillowPill 
+rpdr 15 SashaColby rpdr 15 SashaColby 
+rpdras 1 ChadMichaels rpdras 1 ChadMichaels 
+rpdras 2 Alaska rpdras 2 Alaska 
+rpdras 3 TrixieMattel rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo rpdras 8 Jimbo 
+drt 1 NataliaPliacam drt 1 NataliaPliacam 
+drt 2 AngeleAnang drt 2 AngeleAnang 
+rpdruk 1 TheVivienne rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson rpdruk 5 GingerJohnson 
+cdr 1 Priyanka cdr 1 Priyanka 
+cdr 2 IcesisCouture cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby cdr 3 GiseleLullaby 
+cdr 4 Venus cdr 4 Venus 
+drh 1 EnvyPeru drh 1 EnvyPeru 
+drh 2 VanessaVanCartier drh 2 VanessaVanCartier 
+drdu 1 KitaMean drdu 1 KitaMean 
+drdu 2 SpankieJackzon drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala dre 1 CarmenFarala 
+dre 2 SharonNeedles rpdr 4 SharonNeedles 
+dre 2 SharonNeedles dre 2 SharonNeedles 
+dre 3 Pitita dre 3 Pitita 
+dri 1 ElecktraBionic dri 1 ElecktraBionic 
+dri 2 LaDiamond dri 2 LaDiamond 
+dri 3 LinaGalore dri 3 LinaGalore 
+drf 1 Paloma drf 1 Paloma 
+drf 2 Keiona drf 2 Keiona 
+drp 1 PreciousPaulaNicole drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne drbe 1 DragCouenne 
+drbe 2 Alvilda drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta drm 1 CristianPeralta 
+drbs 1 Organzza drbs 1 Organzza 
+drg 1 PandoraNox drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas dreas 1 DragSethlas 
+Printed 63 rows from joining dragrace to dragrace
+% Created hash index for table dragrace on column episodes, with 10 distinct keys
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdr 8 BobTheDragQueen 
+rpdr 10 Aquaria 
+rpdr 12 JaidaEssenceHall 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 8 Jimbo 
+drt 2 AngeleAnang 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+drh 1 EnvyPeru 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dri 1 ElecktraBionic 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+rpdrukvtw 1 BluHydrangea 
+dreas 1 DragSethlas 
+Printed 24 matching rows from dragrace
+% franchise season winner 
+rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon 
+Printed 2 matching rows from dragrace
+% franchise season winner 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 7 VioletChachki 
+rpdr 9 SashaVelour 
+rpdr 11 YvieOddly 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+drt 1 NataliaPliacam 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+cdr 1 Priyanka 
+cdr 4 Venus 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+Printed 33 matching rows from dragrace
+% franchise season winner franchise season winner 
+rpdr 1 BeBeZaharaBenet rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez rpdr 2 TyraSanchez 
+rpdr 3 Raja rpdr 3 Raja 
+rpdr 4 SharonNeedles rpdr 4 SharonNeedles 
+rpdr 4 SharonNeedles dre 2 SharonNeedles 
+rpdr 5 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdr 5 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdr 6 BiancaDelRio rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour rpdr 9 SashaVelour 
+rpdr 10 Aquaria rpdr 10 Aquaria 
+rpdr 11 YvieOddly rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone rpdr 13 Symone 
+rpdr 14 WillowPill rpdr 14 WillowPill 
+rpdr 15 SashaColby rpdr 15 SashaColby 
+rpdras 1 ChadMichaels rpdras 1 ChadMichaels 
+rpdras 2 Alaska rpdras 2 Alaska 
+rpdras 3 TrixieMattel rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo rpdras 8 Jimbo 
+drt 1 NataliaPliacam drt 1 NataliaPliacam 
+drt 2 AngeleAnang drt 2 AngeleAnang 
+rpdruk 1 TheVivienne rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson rpdruk 5 GingerJohnson 
+cdr 1 Priyanka cdr 1 Priyanka 
+cdr 2 IcesisCouture cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby cdr 3 GiseleLullaby 
+cdr 4 Venus cdr 4 Venus 
+drh 1 EnvyPeru drh 1 EnvyPeru 
+drh 2 VanessaVanCartier drh 2 VanessaVanCartier 
+drdu 1 KitaMean drdu 1 KitaMean 
+drdu 2 SpankieJackzon drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala dre 1 CarmenFarala 
+dre 2 SharonNeedles rpdr 4 SharonNeedles 
+dre 2 SharonNeedles dre 2 SharonNeedles 
+dre 3 Pitita dre 3 Pitita 
+dri 1 ElecktraBionic dri 1 ElecktraBionic 
+dri 2 LaDiamond dri 2 LaDiamond 
+dri 3 LinaGalore dri 3 LinaGalore 
+drf 1 Paloma drf 1 Paloma 
+drf 2 Keiona drf 2 Keiona 
+drp 1 PreciousPaulaNicole drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne drbe 1 DragCouenne 
+drbe 2 Alvilda drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta drm 1 CristianPeralta 
+drbs 1 Organzza drbs 1 Organzza 
+drg 1 PandoraNox drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas dreas 1 DragSethlas 
+Printed 63 rows from joining dragrace to dragrace
+% Created bst index for table dragrace on column episodes, with 10 distinct keys
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdr 8 BobTheDragQueen 
+rpdr 10 Aquaria 
+rpdr 12 JaidaEssenceHall 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 8 Jimbo 
+drt 2 AngeleAnang 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+drh 1 EnvyPeru 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dri 1 ElecktraBionic 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+rpdrukvtw 1 BluHydrangea 
+dreas 1 DragSethlas 
+Printed 24 matching rows from dragrace
+% franchise season winner 
+rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon 
+Printed 2 matching rows from dragrace
+% franchise season winner 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 7 VioletChachki 
+rpdr 9 SashaVelour 
+rpdr 11 YvieOddly 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+drt 1 NataliaPliacam 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+cdr 1 Priyanka 
+cdr 4 Venus 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+Printed 33 matching rows from dragrace
+% franchise season winner franchise season winner 
+rpdr 1 BeBeZaharaBenet rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez rpdr 2 TyraSanchez 
+rpdr 3 Raja rpdr 3 Raja 
+rpdr 4 SharonNeedles rpdr 4 SharonNeedles 
+rpdr 4 SharonNeedles dre 2 SharonNeedles 
+rpdr 5 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdr 5 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdr 6 BiancaDelRio rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour rpdr 9 SashaVelour 
+rpdr 10 Aquaria rpdr 10 Aquaria 
+rpdr 11 YvieOddly rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone rpdr 13 Symone 
+rpdr 14 WillowPill rpdr 14 WillowPill 
+rpdr 15 SashaColby rpdr 15 SashaColby 
+rpdras 1 ChadMichaels rpdras 1 ChadMichaels 
+rpdras 2 Alaska rpdras 2 Alaska 
+rpdras 3 TrixieMattel rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo rpdras 8 Jimbo 
+drt 1 NataliaPliacam drt 1 NataliaPliacam 
+drt 2 AngeleAnang drt 2 AngeleAnang 
+rpdruk 1 TheVivienne rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson rpdruk 5 GingerJohnson 
+cdr 1 Priyanka cdr 1 Priyanka 
+cdr 2 IcesisCouture cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby cdr 3 GiseleLullaby 
+cdr 4 Venus cdr 4 Venus 
+drh 1 EnvyPeru drh 1 EnvyPeru 
+drh 2 VanessaVanCartier drh 2 VanessaVanCartier 
+drdu 1 KitaMean drdu 1 KitaMean 
+drdu 2 SpankieJackzon drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala dre 1 CarmenFarala 
+dre 2 SharonNeedles rpdr 4 SharonNeedles 
+dre 2 SharonNeedles dre 2 SharonNeedles 
+dre 3 Pitita dre 3 Pitita 
+dri 1 ElecktraBionic dri 1 ElecktraBionic 
+dri 2 LaDiamond dri 2 LaDiamond 
+dri 3 LinaGalore dri 3 LinaGalore 
+drf 1 Paloma drf 1 Paloma 
+drf 2 Keiona drf 2 Keiona 
+drp 1 PreciousPaulaNicole drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne drbe 1 DragCouenne 
+drbe 2 Alvilda drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta drm 1 CristianPeralta 
+drbs 1 Organzza drbs 1 Organzza 
+drg 1 PandoraNox drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas dreas 1 DragSethlas 
+Printed 63 rows from joining dragrace to dragrace
+% Created hash index for table dragrace on column winner, with 57 distinct keys
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdr 8 BobTheDragQueen 
+rpdr 10 Aquaria 
+rpdr 12 JaidaEssenceHall 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 8 Jimbo 
+drt 2 AngeleAnang 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+drh 1 EnvyPeru 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dri 1 ElecktraBionic 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+rpdrukvtw 1 BluHydrangea 
+dreas 1 DragSethlas 
+Printed 24 matching rows from dragrace
+% franchise season winner 
+rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon 
+Printed 2 matching rows from dragrace
+% franchise season winner 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 7 VioletChachki 
+rpdr 9 SashaVelour 
+rpdr 11 YvieOddly 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+drt 1 NataliaPliacam 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+cdr 1 Priyanka 
+cdr 4 Venus 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+Printed 33 matching rows from dragrace
+% franchise season winner franchise season winner 
+rpdr 1 BeBeZaharaBenet rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez rpdr 2 TyraSanchez 
+rpdr 3 Raja rpdr 3 Raja 
+rpdr 4 SharonNeedles rpdr 4 SharonNeedles 
+rpdr 4 SharonNeedles dre 2 SharonNeedles 
+rpdr 5 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdr 5 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdr 6 BiancaDelRio rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour rpdr 9 SashaVelour 
+rpdr 10 Aquaria rpdr 10 Aquaria 
+rpdr 11 YvieOddly rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone rpdr 13 Symone 
+rpdr 14 WillowPill rpdr 14 WillowPill 
+rpdr 15 SashaColby rpdr 15 SashaColby 
+rpdras 1 ChadMichaels rpdras 1 ChadMichaels 
+rpdras 2 Alaska rpdras 2 Alaska 
+rpdras 3 TrixieMattel rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo rpdras 8 Jimbo 
+drt 1 NataliaPliacam drt 1 NataliaPliacam 
+drt 2 AngeleAnang drt 2 AngeleAnang 
+rpdruk 1 TheVivienne rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson rpdruk 5 GingerJohnson 
+cdr 1 Priyanka cdr 1 Priyanka 
+cdr 2 IcesisCouture cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby cdr 3 GiseleLullaby 
+cdr 4 Venus cdr 4 Venus 
+drh 1 EnvyPeru drh 1 EnvyPeru 
+drh 2 VanessaVanCartier drh 2 VanessaVanCartier 
+drdu 1 KitaMean drdu 1 KitaMean 
+drdu 2 SpankieJackzon drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala dre 1 CarmenFarala 
+dre 2 SharonNeedles rpdr 4 SharonNeedles 
+dre 2 SharonNeedles dre 2 SharonNeedles 
+dre 3 Pitita dre 3 Pitita 
+dri 1 ElecktraBionic dri 1 ElecktraBionic 
+dri 2 LaDiamond dri 2 LaDiamond 
+dri 3 LinaGalore dri 3 LinaGalore 
+drf 1 Paloma drf 1 Paloma 
+drf 2 Keiona drf 2 Keiona 
+drp 1 PreciousPaulaNicole drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne drbe 1 DragCouenne 
+drbe 2 Alvilda drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta drm 1 CristianPeralta 
+drbs 1 Organzza drbs 1 Organzza 
+drg 1 PandoraNox drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas dreas 1 DragSethlas 
+Printed 63 rows from joining dragrace to dragrace
+% Created bst index for table dragrace on column winner, with 57 distinct keys
+% franchise season winner 
+rpdr 1 BeBeZaharaBenet 
+rpdr 2 TyraSanchez 
+rpdr 3 Raja 
+rpdr 4 SharonNeedles 
+rpdr 5 JinkxMonsoon 
+rpdr 6 BiancaDelRio 
+rpdr 7 VioletChachki 
+rpdr 8 BobTheDragQueen 
+rpdr 9 SashaVelour 
+rpdr 10 Aquaria 
+rpdr 11 YvieOddly 
+rpdr 12 JaidaEssenceHall 
+rpdr 13 Symone 
+rpdr 14 WillowPill 
+rpdr 15 SashaColby 
+rpdras 1 ChadMichaels 
+rpdras 2 Alaska 
+rpdras 3 TrixieMattel 
+rpdras 4 MonetXChange 
+rpdras 5 SheaCoulee 
+rpdras 6 KylieSoniqueLove 
+rpdras 7 JinkxMonsoon 
+rpdras 8 Jimbo 
+drt 1 NataliaPliacam 
+drt 2 AngeleAnang 
+rpdruk 1 TheVivienne 
+rpdruk 2 LawrenceChaney 
+rpdruk 3 KrystalVersace 
+rpdruk 4 DannyBeard 
+rpdruk 5 GingerJohnson 
+cdr 1 Priyanka 
+cdr 2 IcesisCouture 
+cdr 3 GiseleLullaby 
+cdr 4 Venus 
+drh 1 EnvyPeru 
+drh 2 VanessaVanCartier 
+drdu 1 KitaMean 
+drdu 2 SpankieJackzon 
+drdu 3 IvisAvisLoren 
+dre 1 CarmenFarala 
+dre 2 SharonNeedles 
+dre 3 Pitita 
+dri 1 ElecktraBionic 
+dri 2 LaDiamond 
+dri 3 LinaGalore 
+drf 1 Paloma 
+drf 2 Keiona 
+drp 1 PreciousPaulaNicole 
+drp 2 CaptivatingKatkat 
+drbe 1 DragCouenne 
+drbe 2 Alvilda 
+drs 1 AdmiraThunderpussy 
+drm 1 CristianPeralta 
+drbs 1 Organzza 
+drg 1 PandoraNox 
+rpdrukvtw 1 BluHydrangea 
+rpdrukvtw 2 TiaKofi 
+cdrcvtw 1 RajahOHara 
+dreas 1 DragSethlas 
+Printed 59 matching rows from dragrace
+% franchise season winner 
+drs 1 AdmiraThunderpussy 
+rpdras 2 Alaska 
+drbe 2 Alvilda 
+drt 2 AngeleAnang 
+rpdr 10 Aquaria 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdrukvtw 1 BluHydrangea 
+rpdr 8 BobTheDragQueen 
+drp 2 CaptivatingKatkat 
+dre 1 CarmenFarala 
+rpdras 1 ChadMichaels 
+drm 1 CristianPeralta 
+rpdruk 4 DannyBeard 
+drbe 1 DragCouenne 
+dreas 1 DragSethlas 
+dri 1 ElecktraBionic 
+drh 1 EnvyPeru 
+rpdruk 5 GingerJohnson 
+cdr 3 GiseleLullaby 
+cdr 2 IcesisCouture 
+drdu 3 IvisAvisLoren 
+rpdr 12 JaidaEssenceHall 
+rpdras 8 Jimbo 
+Printed 24 matching rows from dragrace
+% franchise season winner 
+drs 1 AdmiraThunderpussy 
+rpdras 2 Alaska 
+drbe 2 Alvilda 
+drt 2 AngeleAnang 
+rpdr 10 Aquaria 
+rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio 
+rpdrukvtw 1 BluHydrangea 
+rpdr 8 BobTheDragQueen 
+drp 2 CaptivatingKatkat 
+dre 1 CarmenFarala 
+rpdras 1 ChadMichaels 
+drm 1 CristianPeralta 
+rpdruk 4 DannyBeard 
+drbe 1 DragCouenne 
+dreas 1 DragSethlas 
+dri 1 ElecktraBionic 
+drh 1 EnvyPeru 
+rpdruk 5 GingerJohnson 
+cdr 3 GiseleLullaby 
+cdr 2 IcesisCouture 
+drdu 3 IvisAvisLoren 
+rpdr 12 JaidaEssenceHall 
+rpdras 8 Jimbo 
+rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon 
+drf 2 Keiona 
+drdu 1 KitaMean 
+rpdruk 3 KrystalVersace 
+rpdras 6 KylieSoniqueLove 
+dri 2 LaDiamond 
+rpdruk 2 LawrenceChaney 
+dri 3 LinaGalore 
+rpdras 4 MonetXChange 
+drt 1 NataliaPliacam 
+drbs 1 Organzza 
+drf 1 Paloma 
+drg 1 PandoraNox 
+dre 3 Pitita 
+drp 1 PreciousPaulaNicole 
+cdr 1 Priyanka 
+rpdr 3 Raja 
+cdrcvtw 1 RajahOHara 
+rpdr 15 SashaColby 
+rpdr 9 SashaVelour 
+rpdr 4 SharonNeedles 
+dre 2 SharonNeedles 
+rpdras 5 SheaCoulee 
+drdu 2 SpankieJackzon 
+rpdr 13 Symone 
+rpdruk 1 TheVivienne 
+rpdrukvtw 2 TiaKofi 
+rpdras 3 TrixieMattel 
+rpdr 2 TyraSanchez 
+drh 2 VanessaVanCartier 
+cdr 4 Venus 
+rpdr 7 VioletChachki 
+rpdr 14 WillowPill 
+rpdr 11 YvieOddly 
+Printed 63 matching rows from dragrace
+% franchise season winner 
+drf 2 Keiona 
+drdu 1 KitaMean 
+rpdruk 3 KrystalVersace 
+rpdras 6 KylieSoniqueLove 
+dri 2 LaDiamond 
+rpdruk 2 LawrenceChaney 
+dri 3 LinaGalore 
+rpdras 4 MonetXChange 
+drt 1 NataliaPliacam 
+drbs 1 Organzza 
+drf 1 Paloma 
+drg 1 PandoraNox 
+dre 3 Pitita 
+drp 1 PreciousPaulaNicole 
+cdr 1 Priyanka 
+rpdr 3 Raja 
+cdrcvtw 1 RajahOHara 
+rpdr 15 SashaColby 
+rpdr 9 SashaVelour 
+rpdr 4 SharonNeedles 
+dre 2 SharonNeedles 
+rpdras 5 SheaCoulee 
+drdu 2 SpankieJackzon 
+rpdr 13 Symone 
+rpdruk 1 TheVivienne 
+rpdrukvtw 2 TiaKofi 
+rpdras 3 TrixieMattel 
+rpdr 2 TyraSanchez 
+drh 2 VanessaVanCartier 
+cdr 4 Venus 
+rpdr 7 VioletChachki 
+rpdr 14 WillowPill 
+rpdr 11 YvieOddly 
+Printed 33 matching rows from dragrace
+% franchise season winner franchise season winner 
+drs 1 AdmiraThunderpussy drs 1 AdmiraThunderpussy 
+rpdras 2 Alaska rpdras 2 Alaska 
+drbe 2 Alvilda drbe 2 Alvilda 
+drt 2 AngeleAnang drt 2 AngeleAnang 
+rpdr 10 Aquaria rpdr 10 Aquaria 
+rpdr 1 BeBeZaharaBenet rpdr 1 BeBeZaharaBenet 
+rpdr 6 BiancaDelRio rpdr 6 BiancaDelRio 
+rpdrukvtw 1 BluHydrangea rpdrukvtw 1 BluHydrangea 
+rpdr 8 BobTheDragQueen rpdr 8 BobTheDragQueen 
+drp 2 CaptivatingKatkat drp 2 CaptivatingKatkat 
+dre 1 CarmenFarala dre 1 CarmenFarala 
+rpdras 1 ChadMichaels rpdras 1 ChadMichaels 
+drm 1 CristianPeralta drm 1 CristianPeralta 
+rpdruk 4 DannyBeard rpdruk 4 DannyBeard 
+drbe 1 DragCouenne drbe 1 DragCouenne 
+dreas 1 DragSethlas dreas 1 DragSethlas 
+dri 1 ElecktraBionic dri 1 ElecktraBionic 
+drh 1 EnvyPeru drh 1 EnvyPeru 
+rpdruk 5 GingerJohnson rpdruk 5 GingerJohnson 
+cdr 3 GiseleLullaby cdr 3 GiseleLullaby 
+cdr 2 IcesisCouture cdr 2 IcesisCouture 
+drdu 3 IvisAvisLoren drdu 3 IvisAvisLoren 
+rpdr 12 JaidaEssenceHall rpdr 12 JaidaEssenceHall 
+rpdras 8 Jimbo rpdras 8 Jimbo 
+rpdr 5 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdr 5 JinkxMonsoon rpdras 7 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdr 5 JinkxMonsoon 
+rpdras 7 JinkxMonsoon rpdras 7 JinkxMonsoon 
+drf 2 Keiona drf 2 Keiona 
+drdu 1 KitaMean drdu 1 KitaMean 
+rpdruk 3 KrystalVersace rpdruk 3 KrystalVersace 
+rpdras 6 KylieSoniqueLove rpdras 6 KylieSoniqueLove 
+dri 2 LaDiamond dri 2 LaDiamond 
+rpdruk 2 LawrenceChaney rpdruk 2 LawrenceChaney 
+dri 3 LinaGalore dri 3 LinaGalore 
+rpdras 4 MonetXChange rpdras 4 MonetXChange 
+drt 1 NataliaPliacam drt 1 NataliaPliacam 
+drbs 1 Organzza drbs 1 Organzza 
+drf 1 Paloma drf 1 Paloma 
+drg 1 PandoraNox drg 1 PandoraNox 
+dre 3 Pitita dre 3 Pitita 
+drp 1 PreciousPaulaNicole drp 1 PreciousPaulaNicole 
+cdr 1 Priyanka cdr 1 Priyanka 
+rpdr 3 Raja rpdr 3 Raja 
+cdrcvtw 1 RajahOHara cdrcvtw 1 RajahOHara 
+rpdr 15 SashaColby rpdr 15 SashaColby 
+rpdr 9 SashaVelour rpdr 9 SashaVelour 
+rpdr 4 SharonNeedles rpdr 4 SharonNeedles 
+rpdr 4 SharonNeedles dre 2 SharonNeedles 
+dre 2 SharonNeedles rpdr 4 SharonNeedles 
+dre 2 SharonNeedles dre 2 SharonNeedles 
+rpdras 5 SheaCoulee rpdras 5 SheaCoulee 
+drdu 2 SpankieJackzon drdu 2 SpankieJackzon 
+rpdr 13 Symone rpdr 13 Symone 
+rpdruk 1 TheVivienne rpdruk 1 TheVivienne 
+rpdrukvtw 2 TiaKofi rpdrukvtw 2 TiaKofi 
+rpdras 3 TrixieMattel rpdras 3 TrixieMattel 
+rpdr 2 TyraSanchez rpdr 2 TyraSanchez 
+drh 2 VanessaVanCartier drh 2 VanessaVanCartier 
+cdr 4 Venus cdr 4 Venus 
+rpdr 7 VioletChachki rpdr 7 VioletChachki 
+rpdr 14 WillowPill rpdr 14 WillowPill 
+rpdr 11 YvieOddly rpdr 11 YvieOddly 
+Printed 63 rows from joining dragrace to dragrace
+% Thanks for being silly!

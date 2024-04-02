@@ -1,0 +1,1269 @@
+% New table points with column(s) name total current previous seniority sgs tour_eligible unexcused_abscences created
+% Added 92 rows to points from position 0 to 91
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 92 matching rows from points
+% name total previous 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 49 matching rows from points
+% name total previous 
+PerezAndrew 0 0 
+Printed 1 matching rows from points
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+Printed 43 matching rows from points
+% name total previous 
+Printed 0 matching rows from points
+% name total previous 
+Printed 0 matching rows from points
+% name total previous 
+Printed 0 matching rows from points
+% name total previous name total previous 
+PribbleJack 63.5 63.5 PribbleJack 63.5 63.5 
+DeTulleoCameron 27.7 27.7 DeTulleoCameron 27.7 27.7 
+NukalaVivek 17.5 17.5 BapatAdi 48.5 17.5 
+NukalaVivek 17.5 17.5 NukalaVivek 17.5 17.5 
+PerezAndrew 0 0 SchlaffKyle 46 0 
+PerezAndrew 0 0 ReidHunter 38.7 0 
+PerezAndrew 0 0 MendesFrank 35 0 
+PerezAndrew 0 0 TopolewskiTheo 1.7 0 
+PerezAndrew 0 0 CaseyConnor 74 0 
+PerezAndrew 0 0 FaydenkoJonathan 60.7 0 
+PerezAndrew 0 0 CarlsonBenjamin 56 0 
+PerezAndrew 0 0 DruzgalOwen 46 0 
+PerezAndrew 0 0 WilliamsKeen 44 0 
+PerezAndrew 0 0 HughesRyan 40 0 
+PerezAndrew 0 0 OShaughnesseyRyan 37 0 
+PerezAndrew 0 0 AlvarezMateo 34 0 
+PerezAndrew 0 0 MaldonadoDylan 30 0 
+PerezAndrew 0 0 TrygstadJake 2 0 
+PerezAndrew 0 0 VernonMaxwell -1 0 
+PerezAndrew 0 0 HallElijah -1.3 0 
+PerezAndrew 0 0 MunozAbelardo -4 0 
+PerezAndrew 0 0 SpruceNicholas 80.5 0 
+PerezAndrew 0 0 RicheyEli 58 0 
+PerezAndrew 0 0 WhiteJordan 57.2 0 
+PerezAndrew 0 0 BrummerJack 41.7 0 
+PerezAndrew 0 0 KnotSamuel 36 0 
+PerezAndrew 0 0 ShickmanEllis 33 0 
+PerezAndrew 0 0 BrionesTaryn 32.7 0 
+PerezAndrew 0 0 LynnSpencer 1 0 
+PerezAndrew 0 0 PerezAndrew 0 0 
+PerezAndrew 0 0 RusinowskiJack 64 0 
+PerezAndrew 0 0 NagelTim 50 0 
+PerezAndrew 0 0 XieAndrew 41.7 0 
+PerezAndrew 0 0 MorrisonCharlie 41 0 
+PerezAndrew 0 0 CastleColsen 4 0 
+PerezAndrew 0 0 GillJoshua 3 0 
+PerezAndrew 0 0 MooreWilliam -1.3 0 
+NagelTim 50 0 PolitiDaniel 95 50 
+Printed 38 rows from joining points to points
+% Created hash index for table points on column name, with 92 distinct keys
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 92 matching rows from points
+% name total previous 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 49 matching rows from points
+% name total previous 
+PerezAndrew 0 0 
+Printed 1 matching rows from points
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+Printed 43 matching rows from points
+% name total previous name total previous 
+PribbleJack 63.5 63.5 PribbleJack 63.5 63.5 
+DeTulleoCameron 27.7 27.7 DeTulleoCameron 27.7 27.7 
+NukalaVivek 17.5 17.5 BapatAdi 48.5 17.5 
+NukalaVivek 17.5 17.5 NukalaVivek 17.5 17.5 
+PerezAndrew 0 0 SchlaffKyle 46 0 
+PerezAndrew 0 0 ReidHunter 38.7 0 
+PerezAndrew 0 0 MendesFrank 35 0 
+PerezAndrew 0 0 TopolewskiTheo 1.7 0 
+PerezAndrew 0 0 CaseyConnor 74 0 
+PerezAndrew 0 0 FaydenkoJonathan 60.7 0 
+PerezAndrew 0 0 CarlsonBenjamin 56 0 
+PerezAndrew 0 0 DruzgalOwen 46 0 
+PerezAndrew 0 0 WilliamsKeen 44 0 
+PerezAndrew 0 0 HughesRyan 40 0 
+PerezAndrew 0 0 OShaughnesseyRyan 37 0 
+PerezAndrew 0 0 AlvarezMateo 34 0 
+PerezAndrew 0 0 MaldonadoDylan 30 0 
+PerezAndrew 0 0 TrygstadJake 2 0 
+PerezAndrew 0 0 VernonMaxwell -1 0 
+PerezAndrew 0 0 HallElijah -1.3 0 
+PerezAndrew 0 0 MunozAbelardo -4 0 
+PerezAndrew 0 0 SpruceNicholas 80.5 0 
+PerezAndrew 0 0 RicheyEli 58 0 
+PerezAndrew 0 0 WhiteJordan 57.2 0 
+PerezAndrew 0 0 BrummerJack 41.7 0 
+PerezAndrew 0 0 KnotSamuel 36 0 
+PerezAndrew 0 0 ShickmanEllis 33 0 
+PerezAndrew 0 0 BrionesTaryn 32.7 0 
+PerezAndrew 0 0 LynnSpencer 1 0 
+PerezAndrew 0 0 PerezAndrew 0 0 
+PerezAndrew 0 0 RusinowskiJack 64 0 
+PerezAndrew 0 0 NagelTim 50 0 
+PerezAndrew 0 0 XieAndrew 41.7 0 
+PerezAndrew 0 0 MorrisonCharlie 41 0 
+PerezAndrew 0 0 CastleColsen 4 0 
+PerezAndrew 0 0 GillJoshua 3 0 
+PerezAndrew 0 0 MooreWilliam -1.3 0 
+NagelTim 50 0 PolitiDaniel 95 50 
+Printed 38 rows from joining points to points
+% Created bst index for table points on column name, with 92 distinct keys
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 92 matching rows from points
+% name total previous 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 49 matching rows from points
+% name total previous 
+PerezAndrew 0 0 
+Printed 1 matching rows from points
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+Printed 43 matching rows from points
+% name total previous name total previous 
+PribbleJack 63.5 63.5 PribbleJack 63.5 63.5 
+DeTulleoCameron 27.7 27.7 DeTulleoCameron 27.7 27.7 
+NukalaVivek 17.5 17.5 BapatAdi 48.5 17.5 
+NukalaVivek 17.5 17.5 NukalaVivek 17.5 17.5 
+PerezAndrew 0 0 SchlaffKyle 46 0 
+PerezAndrew 0 0 ReidHunter 38.7 0 
+PerezAndrew 0 0 MendesFrank 35 0 
+PerezAndrew 0 0 TopolewskiTheo 1.7 0 
+PerezAndrew 0 0 CaseyConnor 74 0 
+PerezAndrew 0 0 FaydenkoJonathan 60.7 0 
+PerezAndrew 0 0 CarlsonBenjamin 56 0 
+PerezAndrew 0 0 DruzgalOwen 46 0 
+PerezAndrew 0 0 WilliamsKeen 44 0 
+PerezAndrew 0 0 HughesRyan 40 0 
+PerezAndrew 0 0 OShaughnesseyRyan 37 0 
+PerezAndrew 0 0 AlvarezMateo 34 0 
+PerezAndrew 0 0 MaldonadoDylan 30 0 
+PerezAndrew 0 0 TrygstadJake 2 0 
+PerezAndrew 0 0 VernonMaxwell -1 0 
+PerezAndrew 0 0 HallElijah -1.3 0 
+PerezAndrew 0 0 MunozAbelardo -4 0 
+PerezAndrew 0 0 SpruceNicholas 80.5 0 
+PerezAndrew 0 0 RicheyEli 58 0 
+PerezAndrew 0 0 WhiteJordan 57.2 0 
+PerezAndrew 0 0 BrummerJack 41.7 0 
+PerezAndrew 0 0 KnotSamuel 36 0 
+PerezAndrew 0 0 ShickmanEllis 33 0 
+PerezAndrew 0 0 BrionesTaryn 32.7 0 
+PerezAndrew 0 0 LynnSpencer 1 0 
+PerezAndrew 0 0 PerezAndrew 0 0 
+PerezAndrew 0 0 RusinowskiJack 64 0 
+PerezAndrew 0 0 NagelTim 50 0 
+PerezAndrew 0 0 XieAndrew 41.7 0 
+PerezAndrew 0 0 MorrisonCharlie 41 0 
+PerezAndrew 0 0 CastleColsen 4 0 
+PerezAndrew 0 0 GillJoshua 3 0 
+PerezAndrew 0 0 MooreWilliam -1.3 0 
+NagelTim 50 0 PolitiDaniel 95 50 
+Printed 38 rows from joining points to points
+% Created hash index for table points on column total, with 89 distinct keys
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 92 matching rows from points
+% name total previous 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 49 matching rows from points
+% name total previous 
+PerezAndrew 0 0 
+Printed 1 matching rows from points
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+Printed 43 matching rows from points
+% name total previous name total previous 
+PribbleJack 63.5 63.5 PribbleJack 63.5 63.5 
+DeTulleoCameron 27.7 27.7 DeTulleoCameron 27.7 27.7 
+NukalaVivek 17.5 17.5 BapatAdi 48.5 17.5 
+NukalaVivek 17.5 17.5 NukalaVivek 17.5 17.5 
+PerezAndrew 0 0 SchlaffKyle 46 0 
+PerezAndrew 0 0 ReidHunter 38.7 0 
+PerezAndrew 0 0 MendesFrank 35 0 
+PerezAndrew 0 0 TopolewskiTheo 1.7 0 
+PerezAndrew 0 0 CaseyConnor 74 0 
+PerezAndrew 0 0 FaydenkoJonathan 60.7 0 
+PerezAndrew 0 0 CarlsonBenjamin 56 0 
+PerezAndrew 0 0 DruzgalOwen 46 0 
+PerezAndrew 0 0 WilliamsKeen 44 0 
+PerezAndrew 0 0 HughesRyan 40 0 
+PerezAndrew 0 0 OShaughnesseyRyan 37 0 
+PerezAndrew 0 0 AlvarezMateo 34 0 
+PerezAndrew 0 0 MaldonadoDylan 30 0 
+PerezAndrew 0 0 TrygstadJake 2 0 
+PerezAndrew 0 0 VernonMaxwell -1 0 
+PerezAndrew 0 0 HallElijah -1.3 0 
+PerezAndrew 0 0 MunozAbelardo -4 0 
+PerezAndrew 0 0 SpruceNicholas 80.5 0 
+PerezAndrew 0 0 RicheyEli 58 0 
+PerezAndrew 0 0 WhiteJordan 57.2 0 
+PerezAndrew 0 0 BrummerJack 41.7 0 
+PerezAndrew 0 0 KnotSamuel 36 0 
+PerezAndrew 0 0 ShickmanEllis 33 0 
+PerezAndrew 0 0 BrionesTaryn 32.7 0 
+PerezAndrew 0 0 LynnSpencer 1 0 
+PerezAndrew 0 0 PerezAndrew 0 0 
+PerezAndrew 0 0 RusinowskiJack 64 0 
+PerezAndrew 0 0 NagelTim 50 0 
+PerezAndrew 0 0 XieAndrew 41.7 0 
+PerezAndrew 0 0 MorrisonCharlie 41 0 
+PerezAndrew 0 0 CastleColsen 4 0 
+PerezAndrew 0 0 GillJoshua 3 0 
+PerezAndrew 0 0 MooreWilliam -1.3 0 
+NagelTim 50 0 PolitiDaniel 95 50 
+Printed 38 rows from joining points to points
+% Created bst index for table points on column total, with 89 distinct keys
+% name total previous 
+BuckleyReilly 890.8 671.8 
+CoonKyle 627.5 445.5 
+GlaserDerek 622.8 526.8 
+ParikshakLeo 540.6 442.9 
+KucichAl 465.3 325.3 
+ChoudharySikander 312.8 203.8 
+StevensMajor 297.1 294.1 
+SvachaBrenton 241.7 186 
+KruminsCarter 189.6 189.9 
+LaporteEthan 133.7 103.7 
+ReedJohn 105 24 
+TrotmanDawson 69.2 66.2 
+PribbleJack 63.5 63.5 
+SchlaffKyle 46 0 
+ReidHunter 38.7 0 
+MendesFrank 35 0 
+DeTulleoCameron 27.7 27.7 
+KilpatrickDevin 18.7 20 
+TopolewskiTheo 1.7 0 
+OBrienBrad 673.2 534.2 
+VanderWoudePaul 453.9 331.9 
+KernanJack 452.8 346.8 
+SerraJohn 301.2 300.2 
+BonebrightJared 206.3 157.3 
+HigbieCarsten 189.8 89.8 
+MartinLars 177.4 133.4 
+AshleyGabe 148.5 89.8 
+HickmanLee 139 100 
+SinhaPratyush 97 62 
+SchloerbJonah 93.4 90.4 
+VilleneuveMichael 86.2 32.2 
+CaseyConnor 74 0 
+CouchJacob 70.8 67.8 
+RutkowskiBasil 70 25 
+FaydenkoJonathan 60.7 0 
+CarlsonBenjamin 56 0 
+BapatAdi 48.5 17.5 
+DruzgalOwen 46 0 
+WilliamsKeen 44 0 
+HughesRyan 40 0 
+OShaughnesseyRyan 37 0 
+AlvarezMateo 34 0 
+MaldonadoDylan 30 0 
+NukalaVivek 17.5 17.5 
+TrygstadJake 2 0 
+WatersEric 0.3 1.3 
+VernonMaxwell -1 0 
+HallElijah -1.3 0 
+MunozAbelardo -4 0 
+MengozziArthur 1201.1 1147.1 
+McConaugheyDuncan 479.6 374.9 
+DooleyJoseph 361.4 358.4 
+ShatzNathan 314.8 180.8 
+WhiteheadCharlie 289.8 256.6 
+WildesJack 199.4 167.4 
+RadmoreBen 169 92 
+KalluriShashank 163.3 133.3 
+FangAndy 147 98 
+GorisekGazzeJacob 146.2 92.2 
+WalshAndrew 124.9 82.4 
+MitchellBoede 122.3 84.3 
+FlowersDillon 114 61 
+RiccintoThomas 113.5 69.5 
+CheungJulian 102.2 66.2 
+RestivoJoe 87.6 88.3 
+SpruceNicholas 80.5 0 
+RicheyEli 58 0 
+WhiteJordan 57.2 0 
+BrummerJack 41.7 0 
+KnotSamuel 36 0 
+ShickmanEllis 33 0 
+BrionesTaryn 32.7 0 
+LynnSpencer 1 0 
+PerezAndrew 0 0 
+AntonyNick 682.6 469.1 
+ChristiansCole 415 314 
+MinDenaly 250.3 191.3 
+SchwarkKallen 237.5 198.5 
+VanNoteOliver 230.1 182.1 
+HansonErik 170.9 171.9 
+HetzlerAlex 104.8 103.8 
+TomascoGavin 100.1 58.1 
+PolitiDaniel 95 50 
+RusinowskiJack 64 0 
+WallingNik 60.2 58.2 
+NagelTim 50 0 
+XieAndrew 41.7 0 
+MorrisonCharlie 41 0 
+ConleyMatthew 27.6 24.6 
+CastleColsen 4 0 
+GillJoshua 3 0 
+MooreWilliam -1.3 0 
+Printed 92 matching rows from points
+% name total previous 
+MunozAbelardo -4 0 
+HallElijah -1.3 0 
+MooreWilliam -1.3 0 
+VernonMaxwell -1 0 
+PerezAndrew 0 0 
+WatersEric 0.3 1.3 
+LynnSpencer 1 0 
+TopolewskiTheo 1.7 0 
+TrygstadJake 2 0 
+GillJoshua 3 0 
+CastleColsen 4 0 
+NukalaVivek 17.5 17.5 
+KilpatrickDevin 18.7 20 
+ConleyMatthew 27.6 24.6 
+DeTulleoCameron 27.7 27.7 
+MaldonadoDylan 30 0 
+BrionesTaryn 32.7 0 
+ShickmanEllis 33 0 
+AlvarezMateo 34 0 
+MendesFrank 35 0 
+KnotSamuel 36 0 
+OShaughnesseyRyan 37 0 
+ReidHunter 38.7 0 
+HughesRyan 40 0 
+MorrisonCharlie 41 0 
+BrummerJack 41.7 0 
+XieAndrew 41.7 0 
+WilliamsKeen 44 0 
+SchlaffKyle 46 0 
+DruzgalOwen 46 0 
+BapatAdi 48.5 17.5 
+NagelTim 50 0 
+CarlsonBenjamin 56 0 
+WhiteJordan 57.2 0 
+RicheyEli 58 0 
+WallingNik 60.2 58.2 
+FaydenkoJonathan 60.7 0 
+PribbleJack 63.5 63.5 
+RusinowskiJack 64 0 
+TrotmanDawson 69.2 66.2 
+RutkowskiBasil 70 25 
+CouchJacob 70.8 67.8 
+CaseyConnor 74 0 
+SpruceNicholas 80.5 0 
+VilleneuveMichael 86.2 32.2 
+RestivoJoe 87.6 88.3 
+SchloerbJonah 93.4 90.4 
+PolitiDaniel 95 50 
+SinhaPratyush 97 62 
+Printed 49 matching rows from points
+% name total previous 
+MunozAbelardo -4 0 
+HallElijah -1.3 0 
+MooreWilliam -1.3 0 
+VernonMaxwell -1 0 
+PerezAndrew 0 0 
+WatersEric 0.3 1.3 
+LynnSpencer 1 0 
+TopolewskiTheo 1.7 0 
+TrygstadJake 2 0 
+GillJoshua 3 0 
+CastleColsen 4 0 
+NukalaVivek 17.5 17.5 
+KilpatrickDevin 18.7 20 
+ConleyMatthew 27.6 24.6 
+DeTulleoCameron 27.7 27.7 
+MaldonadoDylan 30 0 
+BrionesTaryn 32.7 0 
+ShickmanEllis 33 0 
+AlvarezMateo 34 0 
+MendesFrank 35 0 
+KnotSamuel 36 0 
+OShaughnesseyRyan 37 0 
+ReidHunter 38.7 0 
+HughesRyan 40 0 
+MorrisonCharlie 41 0 
+BrummerJack 41.7 0 
+XieAndrew 41.7 0 
+WilliamsKeen 44 0 
+SchlaffKyle 46 0 
+DruzgalOwen 46 0 
+BapatAdi 48.5 17.5 
+NagelTim 50 0 
+CarlsonBenjamin 56 0 
+WhiteJordan 57.2 0 
+RicheyEli 58 0 
+WallingNik 60.2 58.2 
+FaydenkoJonathan 60.7 0 
+PribbleJack 63.5 63.5 
+RusinowskiJack 64 0 
+TrotmanDawson 69.2 66.2 
+RutkowskiBasil 70 25 
+CouchJacob 70.8 67.8 
+CaseyConnor 74 0 
+SpruceNicholas 80.5 0 
+VilleneuveMichael 86.2 32.2 
+RestivoJoe 87.6 88.3 
+SchloerbJonah 93.4 90.4 
+PolitiDaniel 95 50 
+SinhaPratyush 97 62 
+TomascoGavin 100.1 58.1 
+CheungJulian 102.2 66.2 
+HetzlerAlex 104.8 103.8 
+ReedJohn 105 24 
+RiccintoThomas 113.5 69.5 
+FlowersDillon 114 61 
+MitchellBoede 122.3 84.3 
+WalshAndrew 124.9 82.4 
+LaporteEthan 133.7 103.7 
+HickmanLee 139 100 
+GorisekGazzeJacob 146.2 92.2 
+FangAndy 147 98 
+AshleyGabe 148.5 89.8 
+KalluriShashank 163.3 133.3 
+RadmoreBen 169 92 
+HansonErik 170.9 171.9 
+MartinLars 177.4 133.4 
+KruminsCarter 189.6 189.9 
+HigbieCarsten 189.8 89.8 
+WildesJack 199.4 167.4 
+BonebrightJared 206.3 157.3 
+VanNoteOliver 230.1 182.1 
+SchwarkKallen 237.5 198.5 
+SvachaBrenton 241.7 186 
+MinDenaly 250.3 191.3 
+WhiteheadCharlie 289.8 256.6 
+StevensMajor 297.1 294.1 
+SerraJohn 301.2 300.2 
+ChoudharySikander 312.8 203.8 
+ShatzNathan 314.8 180.8 
+DooleyJoseph 361.4 358.4 
+ChristiansCole 415 314 
+KernanJack 452.8 346.8 
+VanderWoudePaul 453.9 331.9 
+KucichAl 465.3 325.3 
+McConaugheyDuncan 479.6 374.9 
+ParikshakLeo 540.6 442.9 
+GlaserDerek 622.8 526.8 
+CoonKyle 627.5 445.5 
+OBrienBrad 673.2 534.2 
+AntonyNick 682.6 469.1 
+BuckleyReilly 890.8 671.8 
+MengozziArthur 1201.1 1147.1 
+Printed 98 matching rows from points
+% name total previous 
+TomascoGavin 100.1 58.1 
+CheungJulian 102.2 66.2 
+HetzlerAlex 104.8 103.8 
+ReedJohn 105 24 
+RiccintoThomas 113.5 69.5 
+FlowersDillon 114 61 
+MitchellBoede 122.3 84.3 
+WalshAndrew 124.9 82.4 
+LaporteEthan 133.7 103.7 
+HickmanLee 139 100 
+GorisekGazzeJacob 146.2 92.2 
+FangAndy 147 98 
+AshleyGabe 148.5 89.8 
+KalluriShashank 163.3 133.3 
+RadmoreBen 169 92 
+HansonErik 170.9 171.9 
+MartinLars 177.4 133.4 
+KruminsCarter 189.6 189.9 
+HigbieCarsten 189.8 89.8 
+WildesJack 199.4 167.4 
+BonebrightJared 206.3 157.3 
+VanNoteOliver 230.1 182.1 
+SchwarkKallen 237.5 198.5 
+SvachaBrenton 241.7 186 
+MinDenaly 250.3 191.3 
+WhiteheadCharlie 289.8 256.6 
+StevensMajor 297.1 294.1 
+SerraJohn 301.2 300.2 
+ChoudharySikander 312.8 203.8 
+ShatzNathan 314.8 180.8 
+DooleyJoseph 361.4 358.4 
+ChristiansCole 415 314 
+KernanJack 452.8 346.8 
+VanderWoudePaul 453.9 331.9 
+KucichAl 465.3 325.3 
+McConaugheyDuncan 479.6 374.9 
+ParikshakLeo 540.6 442.9 
+GlaserDerek 622.8 526.8 
+CoonKyle 627.5 445.5 
+OBrienBrad 673.2 534.2 
+AntonyNick 682.6 469.1 
+BuckleyReilly 890.8 671.8 
+MengozziArthur 1201.1 1147.1 
+Printed 43 matching rows from points
+% name total previous name total previous 
+PerezAndrew 0 0 SchlaffKyle 46 0 
+PerezAndrew 0 0 ReidHunter 38.7 0 
+PerezAndrew 0 0 MendesFrank 35 0 
+PerezAndrew 0 0 TopolewskiTheo 1.7 0 
+PerezAndrew 0 0 CaseyConnor 74 0 
+PerezAndrew 0 0 FaydenkoJonathan 60.7 0 
+PerezAndrew 0 0 CarlsonBenjamin 56 0 
+PerezAndrew 0 0 DruzgalOwen 46 0 
+PerezAndrew 0 0 WilliamsKeen 44 0 
+PerezAndrew 0 0 HughesRyan 40 0 
+PerezAndrew 0 0 OShaughnesseyRyan 37 0 
+PerezAndrew 0 0 AlvarezMateo 34 0 
+PerezAndrew 0 0 MaldonadoDylan 30 0 
+PerezAndrew 0 0 TrygstadJake 2 0 
+PerezAndrew 0 0 VernonMaxwell -1 0 
+PerezAndrew 0 0 HallElijah -1.3 0 
+PerezAndrew 0 0 MunozAbelardo -4 0 
+PerezAndrew 0 0 SpruceNicholas 80.5 0 
+PerezAndrew 0 0 RicheyEli 58 0 
+PerezAndrew 0 0 WhiteJordan 57.2 0 
+PerezAndrew 0 0 BrummerJack 41.7 0 
+PerezAndrew 0 0 KnotSamuel 36 0 
+PerezAndrew 0 0 ShickmanEllis 33 0 
+PerezAndrew 0 0 BrionesTaryn 32.7 0 
+PerezAndrew 0 0 LynnSpencer 1 0 
+PerezAndrew 0 0 PerezAndrew 0 0 
+PerezAndrew 0 0 RusinowskiJack 64 0 
+PerezAndrew 0 0 NagelTim 50 0 
+PerezAndrew 0 0 XieAndrew 41.7 0 
+PerezAndrew 0 0 MorrisonCharlie 41 0 
+PerezAndrew 0 0 CastleColsen 4 0 
+PerezAndrew 0 0 GillJoshua 3 0 
+PerezAndrew 0 0 MooreWilliam -1.3 0 
+NukalaVivek 17.5 17.5 BapatAdi 48.5 17.5 
+NukalaVivek 17.5 17.5 NukalaVivek 17.5 17.5 
+DeTulleoCameron 27.7 27.7 DeTulleoCameron 27.7 27.7 
+NagelTim 50 0 PolitiDaniel 95 50 
+PribbleJack 63.5 63.5 PribbleJack 63.5 63.5 
+Printed 38 rows from joining points to points
+% Thanks for being silly!

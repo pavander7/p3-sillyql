@@ -6,7 +6,6 @@
 
 using namespace std;
 
-Tab* LOC (std::unordered_map<std::string, Tab*> &tables, std::string tablename);
 TableEntry PRODUCE (string type);
 
 int main (int argc, char* argv[]) {
@@ -99,29 +98,26 @@ int main (int argc, char* argv[]) {
                 string junk, tablename;
                 size_t N = 0;
                 cin >> junk >> tablename >> N >> junk;
-                Tab* target = nullptr;
-                target = LOC(tables, tablename);
-                if (target == nullptr) {
+                if (tables.count(tablename) == 0) {
                     std::cout << "Error during INSERT: " << tablename << " does not name a table in the database\n";
                     for (size_t n = 0; n < N; n++) {
                         getline (cin, junk);
                     }
                     break;
                 }
-                target->insert(N);
+                tables[tablename]->insert(N);
                 break;
             } case 'P': { //PRINT
                 string junk, tablename;
                 size_t N = 0;
                 cin >> junk >> tablename >> N;
                 vector<string> colnames;
-                Tab* target = nullptr;
-                target = LOC(tables, tablename);
-                if (target == nullptr) {
+                if (tables.count(tablename) == 0) {
                     std::cout << "Error during PRINT: " << tablename << " does not name a table in the database\n";
                     getline (cin, junk);
                     break;
                 }
+                auto target = tables[tablename];
                 bool quiet = target->quiet;
                 bool err = false;
                 for (size_t n = 0; n < N; n++) {
@@ -164,12 +160,11 @@ int main (int argc, char* argv[]) {
                 char OP;
                 size_t col = 0;
                 cin >> junk >> tablename >> junk >> colname >> OP;
-                Tab* target = nullptr;
-                target = LOC(tables, tablename);
-                if (target == nullptr) {
+                if (tables.count(tablename) == 0) {
                     std::cout << "Error during DELETE: " << tablename << " does not name a table in the database\n";
                     break;
                 }
+                Tab* target = tables[tablename];
                 col = target->findCol(colname);
                 if (col == target->width()) {
                     std::cout << "Error during DELETE: " << colname << " does not name a column in " << target->name << endl;
@@ -191,19 +186,17 @@ int main (int argc, char* argv[]) {
                 cin  >> tablename1 >> junk >> tablename2 
                     >> junk >> colname1 >> junk >> colname2
                     >> junk >> junk >> N;
-                Tab* target1 = nullptr;
-                Tab* target2 = nullptr;
-                target1 = LOC(tables, tablename1);
-                if (target1 == nullptr) {
+                if (tables.count(tablename1) == 0) {
                     std::cout << "Error during JOIN: " << tablename1 << " does not name a table in the database\n";
                     getline(cin,junk);
                     break;
-                } target2 = LOC(tables, tablename2);
-                if (target2 == nullptr) {
+                } if (tables.count(tablename2) == 0) {
                     std::cout << "Error during JOIN: " << tablename2 << " does not name a table in the database\n";
                     getline(cin,junk);
                     break;
-                } i_1 = target1->findCol(colname1);
+                } Tab* target1 = tables[tablename1];
+                Tab* target2 = tables[tablename2];
+                i_1 = target1->findCol(colname1);
                 if (i_1 == target1->width()) {
                     std::cout << "Error during JOIN: " << colname1 << " does not name a column in " << target1->name << endl;
                     getline(cin,junk);
@@ -240,16 +233,14 @@ int main (int argc, char* argv[]) {
             } case 'G': { //GENERATE
                 string junk, tablename, indextype, colname;
                 cin >> junk >> tablename >> indextype >> junk >> junk >> colname;
-                Tab* target = nullptr;
-                target = LOC(tables, tablename);
-                if (target == nullptr) {
+                if (tables.count(tablename) == 0) {
                     std::cout << "Error during GENERATE: " << tablename << " does not name a table in the database\n";
                     break;
-                }
+                } auto target = tables[tablename];
                 size_t y = 0;
                 y = target->findCol(colname);
                 if (y == target->width()) {
-                    std::cout << "Error during GENERATE: " << tablename << " does not name a table in the database\n";
+                    std::cout << "Error during GENERATE: " << colname << " does not name a column in " << target->name << endl;
                     break;
                 }
                 target->indexify((indextype == "bst"), y);
@@ -267,7 +258,8 @@ int main (int argc, char* argv[]) {
     }
 
     //failsafe quit (just in case)
-    for (auto & [ key, value ] : tables) {
+    for (auto & bucket : tables) {
+        auto &value = bucket.second;
         delete value;
     }
     cerr << "exited without QUIT()\n";

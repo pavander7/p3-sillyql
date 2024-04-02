@@ -7503,50 +7503,8 @@ Printed 59 matching rows from dragrace
 % franchise season allstars 
 Printed 0 matching rows from dragrace
 % franchise season allstars 
-rpdr 1 false 
-rpdr 2 false 
-rpdr 3 false 
-rpdr 4 false 
-rpdr 5 false 
-rpdr 6 false 
-rpdr 7 false 
-rpdr 8 false 
-rpdr 9 false 
-rpdr 10 false 
-rpdr 11 false 
-rpdr 12 false 
-rpdr 13 false 
-rpdr 14 false 
-rpdr 15 false 
-drt 1 false 
-drt 2 false 
-rpdruk 1 false 
-rpdruk 2 false 
-rpdruk 3 false 
-rpdruk 4 false 
-rpdruk 5 false 
-cdr 1 false 
-cdr 2 false 
-cdr 3 false 
-cdr 4 false 
-drh 1 false 
-drh 2 false 
-dre 1 false 
-dre 2 false 
-dre 3 false 
-dri 1 false 
-dri 2 false 
-dri 3 false 
-drf 1 false 
-drf 2 false 
-drp 1 false 
-drp 2 false 
-drbe 1 false 
-drbe 2 false 
-drs 1 false 
-drm 1 false 
-drbs 1 false 
-drg 1 false 
+0x7f79ec004160 0x7f79ec0041e0 0x7f79ec0041a0 
+0x7f79ec005870 0x7f79ec005d70 0x7f79ec005af0 
 Printed 44 matching rows from dragrace
 % franchise season allstars 
 rpdras 1 true 

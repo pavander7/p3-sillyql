@@ -1,0 +1,127 @@
+CREATE points 8 string double double double int bool bool double name total current previous seniority sgs tour_eligible unexcused_abscences
+INSERT INTO points 92 ROWS
+BuckleyReilly       890.8	219.0	671.8	25	true    true    0.00
+CoonKyle	        627.5	182.0	445.5	25	true    true    0.00
+GlaserDerek	        622.8	96.0	526.8	25	true    true    0.00
+ParikshakLeo	    540.6	97.67	442.9	25	true    true    0.33
+KucichAl	        465.3	140.0	325.3	25	true    true    0.00
+ChoudharySikander	312.8	109.0	203.8	25	true    true    1.00
+StevensMajor	    297.1	3.0	    294.1	0	true    false   0.00
+SvachaBrenton	    241.7	55.7	186.0	25	true    true    0.33
+KruminsCarter	    189.6	-0.3	189.9	0	false   false   0.33
+LaporteEthan	    133.7	30.0	103.7	25	true    true    2.00
+ReedJohn	        105.0	81.0	24.0	25	true    true    0.00
+TrotmanDawson	    69.2	3.0	    66.2	0	true    false   1.00
+PribbleJack	        63.5	0.0	    63.5	0	false   false   0.00
+SchlaffKyle	        46.0	46.0	0.0	    25	true    true    0.00
+ReidHunter	        38.7	38.7	0.0	    25	true    true    1.33
+MendesFrank	        35.0	35.0	0.0	    25	true    true    1.00
+DeTulleoCameron	    27.7	0.0	    27.7	0	false   false   0.00
+KilpatrickDevin	    18.7	-1.3	20.0	0	false   false   1.33
+TopolewskiTheo	    1.7	    1.7	    0.0	    0	false   false   0.33
+OBrienBrad	        673.2	139.00	534.2	25	true    true    1.00
+VanderWoudePaul	    453.9	122.00	331.9	25	true    true    1.00
+KernanJack	        452.8	106.00	346.8	25	true    true    0.00
+SerraJohn	        301.2	1.0	    300.2	0	false   false   0.00
+BonebrightJared	    206.3	49.00	157.3	25	true    true    1.00
+HigbieCarsten	    189.8	100.00	89.8	25	true    true    0.00
+MartinLars	        177.4	44.00	133.4	25	true    true    0.00
+AshleyGabe	        148.5	58.67	89.8	25	true    true    0.33
+HickmanLee	        139.0	39.00	100.0	25	true    true    0.00
+SinhaPratyush	    97.0	35.00	62.0	25	true    true    0.00
+SchloerbJonah	    93.4	3.00	90.4	0	true    false   0.00
+VilleneuveMichael	86.2	54.00	32.2	25	true    true    1.00
+CaseyConnor	        74.0	74.00	0.0	    25	true    true    0.00
+CouchJacob	        70.8	3.00	67.8	0	true    false   0.00
+RutkowskiBasil	    70.0	45.00	25.0	25	true    true    0.00
+FaydenkoJonathan	60.7	60.67	0.0	    25	true    true    0.33
+CarlsonBenjamin	    56.0	56.00	0.0	    25	true    true    0.00
+BapatAdi	        48.5	31.00	17.5	25	true    true    1.00
+DruzgalOwen	        46.0	46.00	0.0	    25	true    true    0.00
+WilliamsKeen	    44.0	44.00	0.0	    25	true    true    0.00
+HughesRyan	        40.0	40.00	0.0	    25	true    true    0.00
+OShaughnesseyRyan	37.0	37.00	0.0	    25	true    true    0.00
+AlvarezMateo	    34.0	34.00	0.0	    25	true    true    0.00
+MaldonadoDylan	    30.0	30.00	0.0	    25	true    true    1.00
+NukalaVivek	        17.5	0.00	17.5    0	false   false   0.00
+TrygstadJake	    2.0	    2.00	0.0	    0	false   false   0.00
+WatersEric	        0.3	    -1.00	1.3	    0	false   false   1.00
+VernonMaxwell	    -1.0	-1.00	0.0	    0	false   false   1.00
+HallElijah	        -1.3	-1.33	0.0	    0	false   false   1.33
+MunozAbelardo	    -4.0	-4.00	0.0	    0	false   false   4.00
+MengozziArthur	    1201.1	54.00	1147.1	25	true    true    0.00
+McConaugheyDuncan	479.6	104.67	374.9	25	true    true    0.33
+DooleyJoseph	    361.4	3.00	358.4	0	true    false   0.00
+ShatzNathan	        314.8	134.00	180.8	25	true    true    0.00
+WhiteheadCharlie	289.8	33.17	256.6	25	true    true    2.33
+WildesJack	        199.4	32.00	167.4	25	true    true    0.00
+RadmoreBen	        169.0	77.00	92.0	25	true    true    0.00
+KalluriShashank	    163.3	30.00	133.3	25	true    true    0.00
+FangAndy	        147.0	49.00	98.0	25	true    true    2.00
+GorisekGazzeJacob	146.2	54.00	92.2	25	true    true    0.00
+WalshAndrew	        124.9	42.50	82.4	25	true    true    1.00
+MitchellBoede	    122.3	38.00	84.3	25	true    true    2.00
+FlowersDillon 	    114.0	53.00	61.0	25	true    true    0.00
+RiccintoThomas	    113.5	44.00	69.5	25	true    true    0.00
+CheungJulian 	    102.2	36.00	66.2	25	true    true    0.00
+RestivoJoe	        87.6	-0.67	88.3	0	false   false   0.67
+SpruceNicholas	    80.5	80.50	0.0	    25	true    true    0.00
+RicheyEli	        58.0	58.00	0.0	    25	true    true    0.00
+WhiteJordan	        57.2	57.17	0.0	    25	true    true    0.33
+BrummerJack	        41.7	41.67	0.0	    25	true    true    1.33
+KnotSamuel	        36.0	36.00	0.0	    25	true    true    1.00
+ShickmanEllis	    33.0	33.00	0.0	    25	true    true    0.00
+BrionesTaryn	    32.7	32.67	0.0	    25	true    true    1.33
+LynnSpencer	        1.0	    1.00	0.0	    0	false   false   1.00
+PerezAndrew	        0.0	    0.00	0.0	    0	false   false   0.00
+AntonyNick	        682.6	213.50	469.1	25	true    true    0.00
+ChristiansCole	    415.0	101.00	314.0	25	true    true    0.00
+MinDenaly	        250.3	59.00	191.3	25	true    true    0.00
+SchwarkKallen	    237.5	39.00	198.5	25	true    true    1.00
+VanNoteOliver	    230.1	48.00	182.1	25	true    true    0.00
+HansonErik	        170.9	-1.00	171.9	0	false   false   2.00
+HetzlerAlex	        104.8	1.00	103.8	0	true    false   2.00
+TomascoGavin	    100.1	42.00	58.1	25	true    true    0.00
+PolitiDaniel	    95.0	45.00	50.0	25	true    true    2.00
+RusinowskiJack	    64.0	64.00	0.0	    25	true    true    0.00
+WallingNik	        60.2	2.00	58.2	0	false   false   0.00
+NagelTim	        50.0	50.00	0.0	    25	true    true    0.00
+XieAndrew	        41.7	41.67	0.0	    25	true    true    0.33
+MorrisonCharlie	    41.0	41.00	0.0	    25	true    true    0.00
+ConleyMatthew	    27.6	3.00	24.6	0	true    false   1.00
+CastleColsen	    4.0	    4.00	0.0	    0	false   false   0.00
+GillJoshua	        3.0	    3.00	0.0	    0	true    false   1.00
+MooreWilliam	    -1.3	-1.33	0.0	    0	false   false   2.33
+PRINT FROM      points 3    name   total    previous            ALL
+PRINT FROM      points 3    name   total    previous            WHERE       total < 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 0.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total < -100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 2000.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 2000.0
+JOIN            points AND  points WHERE    total = previous    AND PRINT   6 name 1 total 1 previous 1 name 2 total 2 previous 2
+GENERATE FOR    points hash INDEX ON        name
+PRINT FROM      points 3    name   total    previous            ALL
+PRINT FROM      points 3    name   total    previous            WHERE       total < 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 0.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 100.0
+JOIN            points AND  points WHERE    total = previous    AND PRINT   6 name 1 total 1 previous 1 name 2 total 2 previous 2
+GENERATE FOR    points bst  INDEX ON        name
+PRINT FROM      points 3    name   total    previous            ALL
+PRINT FROM      points 3    name   total    previous            WHERE       total < 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 0.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 100.0
+JOIN            points AND  points WHERE    total = previous    AND PRINT   6 name 1 total 1 previous 1 name 2 total 2 previous 2
+GENERATE FOR    points hash INDEX ON        total
+PRINT FROM      points 3    name   total    previous            ALL
+PRINT FROM      points 3    name   total    previous            WHERE       total < 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 0.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 100.0
+JOIN            points AND  points WHERE    total = previous    AND PRINT   6 name 1 total 1 previous 1 name 2 total 2 previous 2
+GENERATE FOR    points bst  INDEX ON        total
+PRINT FROM      points 3    name   total    previous            ALL
+PRINT FROM      points 3    name   total    previous            WHERE       total < 100.0
+PRINT FROM      points 3    name   total    previous            WHERE       total = 0.0
+PRINT FROM      points 3    name   total    previous            WHERE       total > 100.0
+JOIN            points AND  points WHERE    total = previous    AND PRINT   6 name 1 total 1 previous 1 name 2 total 2 previous 2
+QUIT

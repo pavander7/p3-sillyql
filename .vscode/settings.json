@@ -64,7 +64,8 @@
         "utility": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "__functional_03": "cpp"
     },
     "cmake.configureOnOpen": false
 }
