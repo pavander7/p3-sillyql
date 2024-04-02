@@ -44,7 +44,7 @@ TableEntry PRODUCE (string type) {
 //auxiliary functions
 
 //TAB FUNCTIONS
-Tab::Tab(std::string tablename, std::vector<std::string> types_in, std::vector<std::string> names_in, bool quiet_in) : 
+Tab::Tab(std::string tablename, std::vector<std::string> &types_in, std::vector<std::string> &names_in, bool quiet_in) : 
         name(tablename), quiet(quiet_in), types(types_in), names(names_in) {
     i = nullptr;
     std::cout << "New table " << name << " with column(s) ";
@@ -58,6 +58,7 @@ Tab::Tab(const Tab& other) {
     names = other.names;
     quiet = other.quiet;
     i = nullptr;
+    data.reserve(other.data.size());
     for (auto her : other.data) {
         vector<TableEntry>* temp = new vector<TableEntry>(*her);
         data.push_back(temp);
@@ -69,6 +70,7 @@ Tab &Tab::operator=(const Tab& rhs) {
     names = rhs.names;
     quiet = rhs.quiet;
     i = nullptr;
+    data.reserve(rhs.data.size());
     for (auto her : rhs.data) {
         vector<TableEntry>* temp = new vector<TableEntry>(*her);
         data.push_back(temp);
@@ -87,9 +89,10 @@ void Tab::insert(size_t N) {
     } size_t endN = data.size() - size_t(1);
     std::cout << "Added " << N << " rows to " << name << " from position " << startN << " to " << endN << endl;
 }
-void Tab::print(vector<std::string> cols) {
+void Tab::print(vector<std::string> &cols) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
+    iCols.reserve(cols.size());
     for (auto mother : cols) {
         if(!quiet) std::cout << mother << " ";
         for(size_t q = 0; q < names.size(); q++) {
@@ -108,6 +111,7 @@ void Tab::print(vector<std::string> cols) {
 size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, TableEntry val) {
     //map<string,vector<TableEntry>> her(data.begin(), data.end());
     vector<size_t> iCols;
+    iCols.reserve(cols.size());
     size_t M = 0;
     for(auto mother : cols) {
         if (!quiet) std::cout << mother << " ";
@@ -136,11 +140,11 @@ size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, Ta
                 }
             } return M;
         }
-        ColComp comp(col, OP, val, this);
+        ColComp comp(col, OP, val, *this);
         if (OP == '<') {
-            map<TableEntry, vector<vector<TableEntry>*>> sieve(i->o.begin(), i->o.lower_bound(val));
-            for(auto &  bucket : sieve) { //copy constructing here (bad)
-                auto &storage = bucket.second;
+            auto lb = i->o.lower_bound(val);
+            for(auto it = i->o.begin(); it != lb; it++) {
+                auto &storage = it->second;
                 M += storage.size();
                 if (!quiet) {
                     for (auto row : storage) {
@@ -152,9 +156,8 @@ size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, Ta
             }
         }
         else {
-            map<TableEntry, vector<vector<TableEntry>*>> sieve(i->o.upper_bound(val), i->o.end());
-            for(auto &  bucket : sieve) { //copy constructing here (bad)
-                auto &storage = bucket.second;
+            for(auto it = i->o.upper_bound(val); it != i->o.end(); it++) { //copy constructing here (bad)
+                auto &storage = it->second;
                 M += storage.size();
                 if (!quiet) {
                     for (auto row : storage) {
@@ -167,13 +170,12 @@ size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, Ta
         }
     } else {
         if (OP == '=') {
-            Index sieve(false, col, this);
+            Index sieve(false, col, *this);
             if (sieve.count(val) != 0) {
                 vector<vector<TableEntry>*> storage = sieve(val);
                 M = storage.size();
                 if (!quiet) {
-                    for (auto &bucket : sieve.u) {
-                        auto row = &(bucket.second);
+                    for (auto &row : storage) {
                         for (size_t him : iCols) {
                             if (!quiet) std::cout << row->at(him) << " ";
                         } if (!quiet) std::cout << endl;
@@ -181,7 +183,7 @@ size_t Tab::print(vector<std::string> &cols, bool quiet, size_t col, char OP, Ta
                 }
             } return M;
         }
-        ColComp comp(col, OP, val, this);
+        ColComp comp(col, OP, val, *this);
         for(vector<TableEntry>* rupaul : data) {
             if (comp(rupaul)) {
                 for (size_t him : iCols) {
@@ -209,10 +211,10 @@ vector<TableEntry>* Tab::rowify(std::vector<std::string> &types) {
         row->push_back(PRODUCE(types[f]));
     } return row;
 }
-size_t Tab::sift(ColComp comp) {
+size_t Tab::sift(ColComp &comp) {
     size_t N = 0;
     vector<vector<TableEntry>*> temp;
-    Index sieve(false, comp.col, this);
+    /*Index sieve(false, comp.col, this);
     for (auto & bucket : sieve.o) {
         auto directory = bucket.second;
         if (comp(directory[0])) {
@@ -222,7 +224,7 @@ size_t Tab::sift(ColComp comp) {
                 N++;
             }
         }
-    }
+    }*/
     for (auto & elt : data) {
         if (comp(elt)) {
             if (i != nullptr) i->erase((elt)->at(i->col), elt);
@@ -235,8 +237,8 @@ size_t Tab::sift(ColComp comp) {
     data.swap(temp);
     return N;
 }
-void Tab::join (Tab* other, std::size_t col1, std::size_t col2, 
-    std::vector<std::size_t> cols, std::vector<bool> modes, bool quiet) {
+void Tab::join (Tab &other, std::size_t col1, std::size_t col2, 
+    std::vector<std::size_t> &cols, std::vector<bool> &modes, bool quiet) {
     size_t M = 0;
     Index twoSieve(false, col2, other);
     if (!quiet) {
@@ -244,7 +246,7 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
             string temp;
             size_t u = cols[f];
             if (!modes[f]) temp = names[u];
-            else temp = other->names[u];
+            else temp = other.names[u];
             std::cout << temp << ' ';
         } std::cout << endl;
     } if (i != nullptr && i->order && (i->col == col1)) {
@@ -285,7 +287,7 @@ void Tab::join (Tab* other, std::size_t col1, std::size_t col2,
             }
         }
     }
-    std::cout << "Printed " << M << " rows from joining " << this->name << " to " << other->name << endl;
+    std::cout << "Printed " << M << " rows from joining " << this->name << " to " << other.name << endl;
 }
 Tab::~Tab() {
     for (vector<TableEntry>* her : data) {
@@ -294,17 +296,17 @@ Tab::~Tab() {
 }
 void Tab::indexify(bool order, std::size_t col) {
     if (this->i == nullptr) {
-        this->i = new Index(order, col, this);
+        this->i = new Index(order, col, *this);
     } else {
-        this->i->reindex(order, col, this);
+        this->i->reindex(order, col, *this);
     } 
 }
 //TAB FUNCTIONS
 
 //COMP FUNCTIONS
-ColComp::ColComp(size_t col_in, char OP_in, TableEntry val_in, Tab* database) 
+ColComp::ColComp(size_t col_in, char OP_in, TableEntry val_in, Tab &database) 
     : col(col_in), val(val_in), OP(OP_in) {
-    this->data = &(database->data);
+    this->data = &(database.data);
 }
 bool ColComp::operator() (vector<TableEntry>* ptr) {
     TableEntry datum = ptr->at(col);
@@ -328,12 +330,12 @@ std::vector<vector<TableEntry>*> &Index::operator() (TableEntry x) {
     if (order) return (o[x]);
     else return (u[x]);
 }
-Index::Index(bool order_in, size_t col_in, Tab* target) : order(order_in), col(col_in) {
-    vector<vector<TableEntry>*> &rawData = target->data;
+Index::Index(bool order_in, size_t col_in, Tab &target) : order(order_in), col(col_in) {
+    vector<vector<TableEntry>*> &rawData = target.data;
     for (vector<TableEntry>* her : rawData) emplace(her);
 }
-void Index::reindex(bool order_in, size_t col_in, Tab* target) {
-    vector<vector<TableEntry>*> &rawData = target->data;
+void Index::reindex(bool order_in, size_t col_in, Tab &target) {
+    vector<vector<TableEntry>*> &rawData = target.data;
     order = order_in;
     col = col_in;
     o.clear();

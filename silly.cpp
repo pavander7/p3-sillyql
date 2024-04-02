@@ -176,7 +176,7 @@ int main (int argc, char* argv[]) {
                     break;
                 }
                 string type = target->findType(col);
-                ColComp comp(col, OP, PRODUCE(type), target);
+                ColComp comp(col, OP, PRODUCE(type), *target);
                 size_t M = 0;
                 M = target->sift(comp);
                 std::cout << "Deleted " << M << " rows from " << tablename << endl;
@@ -235,7 +235,7 @@ int main (int argc, char* argv[]) {
                     cols.push_back(temp_i);
                     modes.push_back((temp_mode == 2));
                 } if (err) break;
-                target1->join(target2, i_1, i_2, cols, modes, quiet);
+                target1->join(*target2, i_1, i_2, cols, modes, quiet);
                 break;
             } case 'G': { //GENERATE
                 string junk, tablename, indextype, colname;
